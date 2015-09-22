@@ -48,7 +48,12 @@ Internally COMPSs has queue of tasks so the step to add the tasks to the schedul
 
 COMPSs is a framework which allows to define a lot different resources. The communication layer needs a high level of abstraction because workers (resources able to execute tasks) use different protocols (e.g. SSH or NIO). To send the data needed by each task, that is, the method's parameters, COMPSs serializes them to Java objects (except basic types). This means that python's pickle must be able to do the translation which is not the case for the distances matrix.
 
-PyProCT uses pyRMSD to represent the matrix. 
+PyProCT uses pyRMSD to represent the forementioned matrix. It is basically a python wrapper for a C structure. The goal of this implementation is to highly reduce the access time to the matrix elements. 
+\begin{quote}
+Python is slow [...], why: it boils down to Python being a dynamically typed, interpreted language, where values are stored not in dense buffers but in scattered objects. \cite{vanderplas_why_2014}
+\end{quote}
+
+To overcome this Víctor wrote the lean and specialized pyRMSD (which stands for python Root Mean Squared Deviation)
 
 
 

@@ -1,49 +1,56 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/TeX Live for SUSE Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoria.aux
 The style file: plain.bst
-Database file #1: TFG.bib.bib
-Warning--empty year in Laney
-Warning--can't use both author and editor fields in Nayak2015
-You've used 9 entries,
+Database file #1: web_ff.bib.bib
+Warning--I didn't find a database entry for "Laney"
+Warning--I didn't find a database entry for "Ayech2015"
+Warning--I didn't find a database entry for "Burca2014"
+Warning--I didn't find a database entry for "Muller2014"
+Warning--I didn't find a database entry for "Chan2014"
+Warning--I didn't find a database entry for "Cortes2007"
+Warning--I didn't find a database entry for "Nayak2015"
+Warning--I didn't find a database entry for "Kupski2015"
+Warning--I didn't find a database entry for "Adler2015"
+You've used 1 entry,
             2118 wiz_defined-function locations,
-            569 strings with 6082 characters,
-and the built_in function-call counts, 3145 in all, are:
-= -- 317
-> -- 131
-< -- 4
-+ -- 51
-- -- 42
-* -- 237
-:= -- 513
-add.period$ -- 28
-call.type$ -- 9
-change.case$ -- 46
+            520 strings with 4269 characters,
+and the built_in function-call counts, 219 in all, are:
+= -- 17
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 10
+:= -- 41
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 119
-empty$ -- 248
-format.name$ -- 42
-if$ -- 655
+cite$ -- 1
+duplicate$ -- 7
+empty$ -- 23
+format.name$ -- 2
+if$ -- 44
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 11
-newline$ -- 48
-num.names$ -- 18
-pop$ -- 46
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 7
+num.names$ -- 2
+pop$ -- 9
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 3
 quote$ -- 0
-skip$ -- 84
+skip$ -- 8
 stack$ -- 0
-substring$ -- 224
-swap$ -- 28
-text.length$ -- 4
+substring$ -- 5
+swap$ -- 1
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
-warning$ -- 2
-while$ -- 34
-width$ -- 10
-write$ -- 102
-(There were 2 warnings)
+type$ -- 4
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 10
+(There were 9 warnings)
