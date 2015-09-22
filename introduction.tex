@@ -1,0 +1,150 @@
+\chapter{Introduction}
+
+\section{Problem Justification}
+
+Python Protein Clustering Tool (pyProCT from here onwards) Software is an open source software developed by Victor Gil Sepúlveda for cluster analysis (see \hyperref[sec:docs]{Github repository}). This software provides an improved clustering performance through the initial definition of an hypothesis or goal. First it computes the distance's matrix of each pair of elements; it then uses a number of different cluster analysis algorithms on the dataset trying to estimate the best parameters for each one, and, finally, it rates the performance of each method and parametrization with a common scoring function.
+
+The goal of this project is to refactor pyProCT using the COMPSs programming model and framework developed by the Barcelona Supercomputing Center (BSC). This framework provides a sequential programming interface to achieve a parallel and optimized execution pipeline. Programming models are valued by it's capabilities and limitations so in order to explore, contribute and help to further develop the COMPSs framework it is mandatory to use it on real projects to test and debug it.
+
+COMPSs provides a good parallel execution whilst allowing the developer to code in a sequential-oriented way. This differs from other models and paradigms which require the developer to have a deep knowledge of the hardware executing the code such as MPI interfaces and OpenMP C pragmas amongst others. And this project tries to explore and help to develop it by using in on existing to software in a real environment such as pyProCT.
+
+
+
+\section{Objectives}
+
+I will refactor pyProCT with COMP superscalar for python \footnote{ More info on \hyperref[subsec:compss_doc]{COMPSs documentation}} (pyCOMPSs from now onwards) to see if it reduces it's execution time on cluster and grids and/or the complexity, thanks to  the easy-to-use sequential programming paradigm. To achieve this the work will be three-folded and incremental following the next pattern:
+\begin{enumerate}
+\item \textbf{Program Analysis} of the actual performance. This will be useful for two reasons. On one hand we need to analyse the program to, after improving it, measure the performance optimization. On the other, a deep analysis will help to identify the algorithm's bottlenecks and slowest parts as well as finding which are the best optimizations to perform.
+\item \textbf{Optimization} of the algorithm. Because each clustering execution is unrelated to others this step is embarrassingly parallel and so, even prior to the analysis part, some sort of parallelization will surely speed up the algorithm. pyCOMPSs programming model has been chosen because it aims, not only to exploit the inherent parallelism of the program but also, to ease the development of distributed infrastructures in which the software will run. 
+\item \textbf{Optimization's analysis}. Finally we will analyse, compare and evaluate the performance improvements with respect to the initial code. It is important to note that this step differs from the first one on many aspects. Here the focus will be to analyse the changes introduced by the last modification and how it affects the performance. On the first section the focus will be to plan the new modifications, check how they behave with the other ones; merging them together if there is a performance improvement or deciding if it's worth to further investigate how to integrate them with the rest with a performance improvement or discarding them otherwise.
+\end{enumerate}
+
+\section{Scope}
+The analysis and optimization of this software will follow a computational and statistical approach. Following this approach comes the first mentioned optimization with COMPSs. The other optimizations will be decided after the initial analysis of each cycle (see 4. Development Method). However the scope of this optimizations will be limited. No architecture-specific analysis or improvements will be done. All possible modifications will fall into one of the following categories: 
+\begin{enumerate}
+\item \textbf{Distances matrix} computation improvement. The initial calculation of the distances can be space-optimized. A deep analysis will tell if it's worth implementing a more space-efficient function.
+\item \textbf{Task level}. Considering each clustering analysis a task, we can improve the performance of specific algorithms. This includes improvement of the cluster analysis algorithms thanks to either parallelization or different and faster implementations. It is important to note that a task level optimization might not result in an overall performance improvement due to, in example, bottlenecks and execution order. Because of this, the initial analysis is necessary to guide possible improvements. Also the COMPSs refactoring is going to be the first modification because having a robust, prioritizable parallelization will allow us to focus on the tasks making sure that the changes do improve, not just the task performance but, the overall execution and helping sidestep possible bottlenecks. Finally, clarify that this category contains both the optimization of the clustering algorithms as well as the optimization of the best parameters estimation, which may come together or not.
+\item \textbf{Scheduler level}. In this category we find the optimizations that will speed up the software overall performance without changing the specific algorithms. COMPSs refactoring belongs here as well as priority executions, to avoid bottlenecks and parallelizations. Other possibilities are clustering algorithms execution pruning based on other's best scores or pipeline modifications.
+\end{enumerate}
+
+
+
+\section{Methodology}
+
+Due to the fact that there are many possible optimizations of pyProCT (some of them complex enough to be a full project), the limited time and the incremental development of the improvements, we have decided to use an Scrum based methodology. We will set time-variable cycles at the end of which the work will be evaluated. 
+
+I am going to use Paraver and Extrae, for traces' analysis; pyProCT-regression, to validate the new implementation. These tools, as well as pyCOMPSs and pyProCT, are still on development and not fully tested. On this scenario the Scrum methodology is the best. Having cycles means that it's easier to evaluate if some trials lead to a dead-end, are best implemented on another way or, simply, they are not feasible because they are not supported.
+
+Each cycle will be bound to an specific modification. To begin each cycle we will analyse the current state of the project and how previous work affects the code to define which is the next goal and the results we expect to see. Once decided the work plan, we will proceed to it's implementation. 
+
+Once finished we will check if the goals where achieved. It is important to note that even if the cycles duration will be variable, because the complexity of each optimization can vary a lot, it will be soft-decided at the beginning. This will help to keep track of the work easily, decide if a particular modification is taking too long and it will reflect the possibility that an optimization does not improve the overall performance, case in which the results will be analysed and reported nonetheless prior to planning the next work to be done.
+
+This is the most effective way because performing a full initial analysis and deciding at once all the optimizations to implement does not take into account how one modification might affect the next one. We also don't know if the proposed methods are really feasible.
+
+The validation on this project will ensure the correctness of the refactored code. In order to do so different testing methods are going to be proposed. On one hand we will implement a black-box testing. To do so we will gather a large enough and significant number of data sets. Then the original software will be run on those, storing the results of the executions. This will be our first reference point. Then we will implement an script to compare the original results with the ones provided by modified software. For each big iteration these data sets will serve to test the correctness of the new code. However, we will be working with large data sets and this kind of testing can be too time-consuming to be performed as often as desired. 
+
+The code is already part of a github repository. I will fork the code in order to track the changes. For each cycle a new Github milestone will be opened to organise and gather together all the issues (opened on Github too) and changes affecting the same optimization/cycle. 
+
+To work on this project a laptop with the text editor Sublime Text 3. It will also use and have installed all the required software to run the code on the Mare Nostrum machine (through ssh), fork and manage the code versions with git, run the tests and instrument the code (for further details see both \ref{sec:hardware_resources} Hardware Resources and \ref{sec:software_resources} Software Resources sections).
+
+\section{Limitations and Risks}
+
+As stated earlier, most of the used tools and software is still under development so many problems are to be expected. To deal with it I proposed the Scrum methodology (which thanks to it's incremental nature will help to discard unfeasible modifications when finding unsupported features on the tools) and I started to work at the BSC's COMPSs group in order to know more about the internals and to be able to ask questions faster.
+
+Additionally the parallelization could introduce the problem of the reproducibility on the testing. 
+
+The reproducibility problem, defined as the impossibility to repeat an exact execution of the algorithm because of some stochastic parts, such as random initial parameters estimation for example, could difficult the validation and testing part. This could lead to a number of problems. First, the inability to use the black-box validation if two executions with the same data set lead to different results. This clearly affects all the parts of the process involving some kind of randomness. To control this, in case it does affect the testing process, we will try to eliminate the stochastic issues with things like random seeds and manual and fixed parameter estimation determined on the unit tests.
+
+Another issue could be the time. To mitigate this problem the initial set-up phase before the SCRUM iterations has been added (see subsection \ref{subsec:setup} on Tasks Description). The goal of this is to automate the analysis, execution and all the other time-consuming tasks not related to the actual development of the optimizations. 
+
+More problems such as the inability to correctly execute the on the Mare Nostrum III server will be addressed by counting on the BSC team and the project director. The usage of the extrae could also prove to be difficult, to this end the help of an extrae expert, who has already been contacted, is taken into account as an exterior consultant. 
+
+\section{Context}
+
+
+Nowadays the amount of digital information available is exponentially increasing. Just on 2015 we generated almost 8.000 exabytes of information. Facebook generates 105 terabytes of data each half hour, more than 48 hours of video per minute are uploaded to youtube and google has at least 1 million queries/minute. But why do we observe this massive increase? To start the cost of creating, managing and storing information has dramatically dropped: EMC Corporation estimates that on 2011 this cost has been cut to a 1/6 of what it was on 2005. But more importantly people is more connected than it has ever been; mobiles, websites and social channels are just some examples of a whole new world of data-generating people interactions. 
+
+In this scenario is where we found the hot topic of today: Big Data. So what is it?, usually the term is used referring to data sets too big or complex to be processed with traditional data applications or on-hand management tools. According to the IT giant Gartner, Inc Big Data can be characterized by the "3 Vs", velocity, volume and variety \cite{Laney}:
+
+\begin{quotation}
+"Big data" is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.
+\end{quotation}
+
+
+However all this raw information needs to be processed and categorized in an effective way before being used. Cluster analysis methods are one of the most used tools to address this issue. 
+
+The term \textbf{cluster analysis} (first used by Trion, 1939) refers to the task of sorting similar objects of a data set into groups (called clusters) in a way that the degree of similarity between each pair is maximal if they belong to the same cluster and minimal otherwise. Data sets can be imagined as points in a multidimensional space, where each feature of an object would represent a dimension. The CA methods need to identify, as efficiently as possible, the denser areas and group the into clusters.
+
+Thanks to the clustering we can reduce the size of large data sets by extracting the most relevant information, usually the common features of a group or a subset of representatives. Cluster analysis (CA from now onwards) techniques thrive in the Big Data world because it's not feasible to manually label objects, there is no prior knowledge of the number and nature of the clusters and, also, their identifying traits may change over time. 
+
+It is important to note that cluster analysis it's not an specific algorithm but rather the general task to perform. Due to the fact that the similarity criteria it's subjective and can change a lot between data sets, there isn't an optimal clustering algorithm. This is the reason why there are so many  clustering algorithms, each with it's advantages and inconveniences. Each algorithm uses it's own kind of cluster model that defines how the algorithm groups the items and defines the clusters. Some of the most relevant examples are:
+\label{subsec:algorithm_kinds}
+\begin{description}
+\item [Hierarchical Clustering Analysis (HCA)] \hfill \\ 
+These methods seek, as their name indicates, to build a hierarchy of clusters. These can be done by starting with all elements in one clusters and the divide them in a "top down" way, this method is called \textbf{Divisive}. Opposed to this one we find the \textbf{Agglomerative} method, where each data point starts in a different cluster merging them as one moves up the hierarchy.
+\item [Centroid Clustering,] \hfill \\ 
+On these algorithms the similarity between different clusters is defined as the similarity between their centroids. \textbf{K-means} clustering is one of such methods, on it, each observation belongs to the nearest centroid which, in turn, serves as the representative or prototype of the cluster.
+\item [Distribution-based Clustering] \hfill \\ 
+Clusters are modelled by statistical distributions. On this category falls the well-known \textbf{expectation-maximization (EM) algorithm} which uses multivariate normal distributions.
+\item [Density Clustering,] \hfill \\ 
+These methods follow the intuitive notion, described earlier, of considering the observations as clouds of points in a multidimensional space and so, they identify clusters as connected dense regions in the data space. \textbf{DBSCAN} is one of such algorithms and it's both one of the most common as and most cited in scientific literature. 
+\end{description}
+
+
+It is also possible to classify clustering methods by some other properties such as:
+
+\begin{description}
+\item [Hard Clustering,] \hfill \\ where each element belongs to a cluster or not.
+\item [Soft Clustering,] \hfill \\ where each element has likelihood of belonging to a certain cluster.
+\end{description}
+
+
+
+
+Cluster analysis methods can be applied to a wide range of subjects. Basically it can be used in any context where finding groups in sets of data is useful, for example:
+
+\begin{description}
+\item [Image segmentation,] \hfill \\ dividing an image into clusters or, more appropriate on this case, regions enhances a number of computer vision methods. Some examples are border detection or object recognition. \cite{Ayech2015}
+\item [Market analysis,] \hfill \\ grouping enterprises \cite{Burca2014} or consumers \cite{Muller2014} to perform better market analysis or custom ads for each kind of consumer.
+\item [Education tracking,] \hfill \\ grouping students to keep track of their record and apply more custom techniques to each student needs. \cite{Chan2014}
+\item [Mathematical chemistry,] \hfill \\ to analyse, group and find structural similarities in chemistry compounds, minerals, and any kind of material for which a chemical analysis is convenient. \cite{Cortes2007}
+\end{description}
+
+
+\section{Stakeholders}
+
+The implied stakeholders here are, primarily the COMPSs developer team and, second, the rest of the research teams implied on GRID and cluster execution platforms interested on Cluster Analysis. They are the ones who will mostly benefit from this project. As stated earlier, this project wants to develop and explore the COMPSs framework. With this the programming model will be refined and, thanks to it's usage, more desired features can be found. Also the future usage of pyProCT will help to "advertise" and enhance it's possible diffusion, which is the main goal to keep this kind of programming models and frameworks, not just alive, but on a develop and improvement route.
+
+On the other hand the pyProCT software was originally intended for protein clustering. However, the program core is quite generic. Thanks to the implementation of new plug-ins and modules to load, transform and use other kind of data inputs, the software is expected to suit a large group of researchers without too much work. Providing support for other usages is not part of this project but a possible speed up and performance enhancement will help them all and so, they are considered the main clients of the software itself and they will benefit from it.
+
+\section{State of the Art}
+
+
+Most of the clustering analysis methods are not new, however with the dramatical increase in data size mentioned earlier, researchers have focused on improving their performance as much as possible. From this need arise new, but more rough, methods such as \textbf{canonpy clustering} \cite{Nayak2015} which can process huge amounts of information but it just a pre-partitions data to then analyse smaller partitions with slower methods.
+
+The increasing amount of information each data point contains it's also a problem for some algorithms. This information leads to high-dimensional data which, in turn, causes problems to a big part of the modern algorithms. This is known as the curse of dimensionality, which basically points out the fact that high-dimensional data often becomes sparse due to the large volume of space. It is important to note that this problem is not due to data itself but to the algorithm used. Some modern approaches try to overcome this difficulty by reducing the data-dimensionality, with  methods such as \textbf{principal component analysis} \cite{Kupski2015}, use just some part of it, like in \textbf{subspace clustering} \cite{Adler2015} which have adopted ideas from density-based algorithms.
+
+Apart from the clustering analysis techniques the focus of the project is the COMPSs refactoring. The election of the framework has been made according to two reasons: one, the proximity of the BSC research team which will ease the development, two, and most important, the framework is aimed to distributed computing on which the CA tasks are best executed. 
+
+
+\section{Document Structure and Notes}
+
+This section will give an overall view of how the document is structured. I decided to give this document sort of a chronological order because of two reasons: first, following along the work I did makes the whole document easier to understand and second, the work has been incremental, each iteration relying upon the previous decisions, so it seems reasonable to report the results and problems in the order they appeared. l
+
+
+The structure will be similar to the project methodology described on \ref{sec:temporal_planning}. \hyperref[sec:temporal_planning]{Temporal Planning section}. First I will describe how pyProCT works which matches the Code Familiarization task. 
+
+The two next goals were to find which tools to use and to set up the workspace to start de Scrum iterations. To do so I wrote an small program in order to test many things and find possible solutions on a much smaller scale than pyProCT. It helped me to see and learn how to deal with reproducibility problems amongst other validation issues, understand how th current pyProCT's scheduler works and finally to test and learn how to use the analysis tools. 
+
+The Tic-Tac-Toe section describes all the scheduler and analysis tools information. The next step, prior to start working on the refactor, was to set up a reliable validation method to ensure the correctness of the new versions. pyProcT-Regression is the developed software used for black-box validation; on the  Regression section I will describe all the information related with validation (because I deemed excessive and useless to develop a full testing software for the tic-tac-toe game).
+
+Finally the refactor section contains the work related with the integration of a pyCOMPSs scheduler for pyProCT. 
+
+As a final remark I want to say that all tools used have documentation. However being in development some of them are outdated. Wherever the documentation of the tool is good enough I just described the features or issues directly related with this project. 
+
+Of the analysis tools I just explained how I instrumented the code, together with the found issues, and how I obtained the desired visualizations and data.
+
+For pyProCT I described the execution flow (which requires in-depth code knowledge) and summarized and updated the control script section. The actual description of the algorithms and parameter estimation are complex topics; however, their documentation is good enough so I decided just to list them and refer the reader to the original documentation for more information.
+
+Similarly for MareNostrum III environment I mention the creation of bash scripts (to speed up the work, easily submit different versions of pyProCT, different schedulers, with or without tracing and diverse parametrizations) configuration files and usage but I do not describe them unless they are related to issues.
+

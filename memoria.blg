@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: memoria.aux
+The style file: plain.bst
+Database file #1: TFG.bib.bib
+Warning--empty year in Laney
+Warning--can't use both author and editor fields in Nayak2015
+You've used 9 entries,
+            2118 wiz_defined-function locations,
+            569 strings with 6082 characters,
+and the built_in function-call counts, 3145 in all, are:
+= -- 317
+> -- 131
+< -- 4
++ -- 51
+- -- 42
+* -- 237
+:= -- 513
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 46
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 119
+empty$ -- 248
+format.name$ -- 42
+if$ -- 655
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 11
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 46
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 84
+stack$ -- 0
+substring$ -- 224
+swap$ -- 28
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 32
+warning$ -- 2
+while$ -- 34
+width$ -- 10
+write$ -- 102
+(There were 2 warnings)

@@ -1,0 +1,57 @@
+\chapter{Refactor}
+
+This section will walk you through all the refactor process. It will provide a full description of the issues found, wether they were solved or not, the design decisions made and the reasons behind them, and all the information relevant for debugging, testing and further developing both pyCOMPSs and pyProCT. 
+
+
+\section{Set up}
+
+
+The installation of pyProCT as described on the \hyperref[sec:docs]{pyProCT repo} is trivial on a local machine. On MareNostrum III pyProCT is already installed.  In order to use my version under development (instead of the package installed both on MN3 or a local machine) the user just needs to point the python path to it. This is useful to switch between different working versions (for example to use pyProCT-regression validation or to meet the different instrumentation requirements of each scheduler). Later some issues will also force me to use this same method to customize some of the dependencies of pyProCT such as the pyScheduler or pyRMSD. 
+
+Once I installed and ran a few pyProCT examples on my local machine I proceeded to MareNostrum III to do the same. Choosing a good structure to set up the environment is a must for executions on MN3. 
+
+I faced and spent a lot of time on configuration problems. This kind of issues kept popping up during the whole project. Despite that I prefered to group them here and give a brief description of the issues and how they were solved.
+
+This first issue arose when trying to compile and link the development version of pyProCT. It is related with MN3's modules environment. By default, on login, MN3 has 2.6.9 python, however this version is not available to be loaded through the modules; it's only available when no other python has been loaded by the .bashrc file nor manually with \textit{module load PYTHON}. 
+
+pyProCT depends on python 2.7.3 which can be loaded with the modules. At first I compiled and installed it with the default release (2.6.9) with setup.py. On MN3 I had to add a custom installation path (with \textit{--prefix=PATH} option) to setup.py because I have no permissions to write into the default installation directory. After installing it I found out that pyProCT can not be run under python 2.6.9 so I started again all the installation process with 2.7.3 once I figured what was causing the error. 
+
+The new installation lead to the following new bug: 
+
+\textit{undefined symbol: PyUnicodeUCS4\_DecodeUTF8}
+
+This is caused when trying to use software build with UCS4 on a UCS2 python version. On MN3 each installation uses a different one.
+
+\begin{itemize}
+\itemsep0em 
+\item Python 2.7.3 $\rightarrow$ UCS2
+\item Python 2.6.9 $\rightarrow$ UCS4
+\end{itemize}
+
+Python is not a compiled language, so this compilation problem actually comes from the Cython modules integrated into pyProCT. This meant that the new installation (which used the same folder as source) was not recompiling the Cython modules even after issuing a clean command so I cloned the repo again and started from scratch. This time everything ran smoothly. As a curiosity if pyProCT is build with python2.6.9 it can be used with python2.7.3 (although rising some compatibility warnings).
+
+\section{pyCOMPSs}
+
+Prior to starting the refactor I analyzed which would be the best way to parallelize it. pyCOMPSs works by using python's decorators to define some functions as \textit{COMPSs' tasks}. These tasks are executed on previously defined resources such as a MN3 node or a cloud. For each task the framework checks wether that function's parameters depend on some previous task; if it has no dependencies then the task is assigned to a resource which runs it. 
+
+pyProcT clustering and postprocessing sections, as previously stated, are embarrasignly parallel: all algorithm's executions depend only on the distance's matrix calculation; the postprocessing actions all depend on the best clustering (that is to say: the whole clustering section). Knowing this we decided to define as task each algorithm execution and each postprocessing action.
+
+I wanted to mantain the possibility to use the other schedulers after the refactor so I kept the overall structure of pyProCT. Differences are basically found on the Driver, Protocol and Explorer classes, which deal respectively with all the sections pipeline execution, the clustering pipeline, and the clustering exploration \textit{per se}. I simply created a new Driver for the COMPSs scheduling; the main checks wether pyCOMPSs is the scheduler or not and calls one driver or the other accordingly (same method being used for MPI). From the driver onwards the key classes are substituted by the COMPSs versions.
+
+One of the advantages of pyCOMPSs is the small amount of work required to use it. On a normal sequential program we just need to use the \textit{@task()} decorator and the \textit{obj = compss\_wait\_on(obj)} API call to create synchronization points for future objects; from \hyperref[sec:docs]{COMPSs manual}: 
+
+\begin{quote} 
+If the programmer selects as a task a function or method that returns a value, that value is not generated until the task executes. However, in order to keep the asynchrony of the task invocation, COMPSs manages future objects: a representant object is immediately returned to the main program when a task is invoked.
+\end{quote}
+
+Internally COMPSs has queue of tasks so the step to add the tasks to the scheduler is no longer required; instead I called directly the decorated methods (which internally COMPSs enqueues to it's pending's list). However this caused a problem related to the how the framework deals with the data.
+
+COMPSs is a framework which allows to define a lot different resources. The communication layer needs a high level of abstraction because workers (resources able to execute tasks) use different protocols (e.g. SSH or NIO). To send the data needed by each task, that is, the method's parameters, COMPSs serializes them to Java objects (except basic types). This means that python's pickle must be able to do the translation which is not the case for the distances matrix.
+
+PyProCT uses pyRMSD to represent the matrix. 
+
+
+
+
+
+
