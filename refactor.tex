@@ -48,14 +48,16 @@ Internally COMPSs has queue of tasks so the step to add the tasks to the schedul
 
 COMPSs is a framework which allows to define a lot different resources. The communication layer needs a high level of abstraction because workers (resources able to execute tasks) use different protocols (e.g. SSH or NIO). To send the data needed by each task, that is, the method's parameters, COMPSs serializes them to Java objects (except basic types). This means that python's pickle must be able to do the translation which is not the case for the distances matrix.
 
-PyProCT uses pyRMSD to represent the forementioned matrix. It is basically a python wrapper for a C structure. The goal of this implementation is to highly reduce the access time to the matrix elements. 
+PyProCT uses pyRMSD to represent the forementioned matrix. It is basically a python wrapper for a C matrix structure. The goal of this implementation is to highly reduce the access time to the matrix elements. 
 \begin{quote}
 Python is slow [...], why: it boils down to Python being a dynamically typed, interpreted language, where values are stored not in dense buffers but in scattered objects. \cite{vanderplas_why_2014}
 \end{quote}
 
-To overcome this Víctor wrote the lean and specialized pyRMSD (which stands for python Root Mean Squared Deviation)
+To overcome this Víctor wrote the lean and specialized pyRMSD (which stands for python Root Mean Squared Deviation). The problem is that these structure is not a native python type nor it's built with a combination of them. Because of this the framework can not serialize this matrix to send it to each worker. The first idea to solve it was to dump the internal data of the matrix into a python list (which can be serialized arbitrarily) with the already implemented method \textit{get\_data}; this list then can be used to reconstruct the structure the class constructor \textit{CondensedMatrix()}. This approach raised two issues. 
 
+The first issue was where to perform the translations to a python list, which is linked to which is the function decorated as task. Before presenting the solution and the next issue it is worth to make a point about how the algorithms are implemented and called. 
 
+Each algorithm is implemented in a different class so we have \textit{kMedoidsAlgorithm.py}, \textit{spectralClusteringlAlgorithm.py} and so on. All of them however return the same kind of data: clusterings; in order to simplify all the execution pipeline and the code they all have the same structure: all the required arguments are passed to the class constructor and then they all have the \textit{perform\_clustering} method which returns the clusterings found.  
 
 
 

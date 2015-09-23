@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.9.22)  22 SEP 2015 13:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2015.9.22)  23 SEP 2015 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,31 +940,31 @@ Chapter 6.
 [47
 
 ] [48]
-Overfull \hbox (47.39081pt too wide) in paragraph at lines 68--70
+Overfull \hbox (47.39081pt too wide) in paragraph at lines 69--71
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/ide/doc/1.2/COMPSs_IDE_user_guide_
 v1.2.pdf?tracked=true 
  []
 
-
-Overfull \hbox (6.7917pt too wide) in paragraph at lines 70--72
+[49]
+Overfull \hbox (6.7917pt too wide) in paragraph at lines 71--73
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/compss/latest/docs/installation-gu
 ide.html?tracked=true 
  []
 
-[49]
-Overfull \hbox (26.43561pt too wide) in paragraph at lines 77--78
+
+Overfull \hbox (26.43561pt too wide) in paragraph at lines 78--79
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/extrae-
  []
 
 
-Overfull \hbox (131.63756pt too wide) in paragraph at lines 80--82
+Overfull \hbox (131.63756pt too wide) in paragraph at lines 81--83
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/clusteringsuite_manual.pdf 
  []
 
 
-Overfull \hbox (83.60486pt too wide) in paragraph at lines 82--84
+Overfull \hbox (83.60486pt too wide) in paragraph at lines 83--85
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/w1_introtools.pdf 
  []
@@ -1115,7 +1115,7 @@ er/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfti1200.pfb>
-Output written on memoria.pdf (71 pages, 733788 bytes).
+Output written on memoria.pdf (71 pages, 734819 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
  681 compressed objects within 7 object streams
