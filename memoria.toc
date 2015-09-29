@@ -27,34 +27,36 @@
 \contentsline {chapter}{\numberline {5}Refactor}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Set up}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}pyCOMPSs}{44}{section.5.2}
-\contentsline {chapter}{\numberline {6}Glossary and Resources}{47}{chapter.6}
-\contentsline {chapter}{\numberline {7}Temporal Planning}{51}{chapter.7}
-\contentsline {section}{\numberline {7.1}Overview}{51}{section.7.1}
-\contentsline {section}{\numberline {7.2}Task List}{51}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tasks Description}{52}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Project Management}{52}{subsection.7.3.1}
-\contentsline {subsubsection}{Resources list}{52}{section*.11}
-\contentsline {subsection}{\numberline {7.3.2}Code familiarization}{53}{subsection.7.3.2}
-\contentsline {subsubsection}{Resources list}{53}{section*.12}
-\contentsline {subsection}{\numberline {7.3.3}Analysis tools' research}{54}{subsection.7.3.3}
-\contentsline {subsubsection}{Resources list}{54}{section*.13}
-\contentsline {subsection}{\numberline {7.3.4}Common set up for all SCRUM cycles}{54}{subsection.7.3.4}
-\contentsline {subsubsection}{Resources list}{55}{section*.14}
-\contentsline {subsection}{\numberline {7.3.5}SCRUM iterations}{55}{subsection.7.3.5}
-\contentsline {subsubsection}{Resources list}{55}{section*.15}
-\contentsline {subsection}{\numberline {7.3.6}Global performance analysis}{56}{subsection.7.3.6}
-\contentsline {subsubsection}{Resources list}{56}{section*.16}
-\contentsline {section}{\numberline {7.4}Gantt and PERT charts}{56}{section.7.4}
-\contentsline {chapter}{\numberline {8}Budget}{57}{chapter.8}
-\contentsline {section}{\numberline {8.1}Human Resources}{57}{section.8.1}
-\contentsline {section}{\numberline {8.2}Hardware Resources}{58}{section.8.2}
-\contentsline {section}{\numberline {8.3}Software Resources}{58}{section.8.3}
-\contentsline {section}{\numberline {8.4}Total Budget}{60}{section.8.4}
-\contentsline {chapter}{\numberline {9}Sustainability}{61}{chapter.9}
-\contentsline {section}{\numberline {9.1}Economic}{61}{section.9.1}
-\contentsline {section}{\numberline {9.2}Social}{62}{section.9.2}
-\contentsline {section}{\numberline {9.3}Environmental}{62}{section.9.3}
-\contentsline {section}{\numberline {9.4}Context}{63}{section.9.4}
-\contentsline {section}{\numberline {9.5}Stakeholders}{66}{section.9.5}
-\contentsline {section}{\numberline {9.6}State of the Art}{67}{section.9.6}
-\contentsline {section}{References}{67}{section.9.6}
+\contentsline {section}{\numberline {5.3}Other issues}{47}{section.5.3}
+\contentsline {section}{\numberline {5.4}Results}{48}{section.5.4}
+\contentsline {chapter}{\numberline {6}Glossary and Resources}{49}{chapter.6}
+\contentsline {chapter}{\numberline {7}Temporal Planning}{54}{chapter.7}
+\contentsline {section}{\numberline {7.1}Overview}{54}{section.7.1}
+\contentsline {section}{\numberline {7.2}Task List}{54}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tasks Description}{55}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Project Management}{55}{subsection.7.3.1}
+\contentsline {subsubsection}{Resources list}{55}{section*.11}
+\contentsline {subsection}{\numberline {7.3.2}Code familiarization}{56}{subsection.7.3.2}
+\contentsline {subsubsection}{Resources list}{56}{section*.12}
+\contentsline {subsection}{\numberline {7.3.3}Analysis tools' research}{57}{subsection.7.3.3}
+\contentsline {subsubsection}{Resources list}{57}{section*.13}
+\contentsline {subsection}{\numberline {7.3.4}Common set up for all SCRUM cycles}{57}{subsection.7.3.4}
+\contentsline {subsubsection}{Resources list}{58}{section*.14}
+\contentsline {subsection}{\numberline {7.3.5}SCRUM iterations}{58}{subsection.7.3.5}
+\contentsline {subsubsection}{Resources list}{58}{section*.15}
+\contentsline {subsection}{\numberline {7.3.6}Global performance analysis}{59}{subsection.7.3.6}
+\contentsline {subsubsection}{Resources list}{59}{section*.16}
+\contentsline {section}{\numberline {7.4}Gantt and PERT charts}{59}{section.7.4}
+\contentsline {chapter}{\numberline {8}Budget}{60}{chapter.8}
+\contentsline {section}{\numberline {8.1}Human Resources}{60}{section.8.1}
+\contentsline {section}{\numberline {8.2}Hardware Resources}{61}{section.8.2}
+\contentsline {section}{\numberline {8.3}Software Resources}{61}{section.8.3}
+\contentsline {section}{\numberline {8.4}Total Budget}{63}{section.8.4}
+\contentsline {chapter}{\numberline {9}Sustainability}{64}{chapter.9}
+\contentsline {section}{\numberline {9.1}Economic}{64}{section.9.1}
+\contentsline {section}{\numberline {9.2}Social}{65}{section.9.2}
+\contentsline {section}{\numberline {9.3}Environmental}{65}{section.9.3}
+\contentsline {section}{\numberline {9.4}Context}{66}{section.9.4}
+\contentsline {section}{\numberline {9.5}Stakeholders}{69}{section.9.5}
+\contentsline {section}{\numberline {9.6}State of the Art}{70}{section.9.6}
+\contentsline {section}{References}{70}{section.9.6}

@@ -57,7 +57,24 @@ To overcome this Víctor wrote the lean and specialized pyRMSD (which stands for
 
 The first issue was where to perform the translations to a python list, which is linked to which is the function decorated as task. Before presenting the solution and the next issue it is worth to make a point about how the algorithms are implemented and called. 
 
-Each algorithm is implemented in a different class so we have \textit{kMedoidsAlgorithm.py}, \textit{spectralClusteringlAlgorithm.py} and so on. All of them however return the same kind of data: clusterings; in order to simplify all the execution pipeline and the code they all have the same structure: all the required arguments are passed to the class constructor and then they all have the \textit{perform\_clustering} method which returns the clusterings found.  
+Each algorithm is implemented in a different class so we have \textit{kMedoidsAlgorithm.py}, \textit{spectralClusteringlAlgorithm.py} and so on. All of them however return the same kind of data: clusterings; in order to simplify all the execution pipeline and the code they all have the same structure: all the required arguments are passed to the class constructor and then they all have the \textit{perform\_clustering} method which returns the clusterings found for that parametrization. 
+
+With this structure then it would be necessary to decorate the \textit{perform\_clustering} method of each algorithm but only when pyCOMPSs scheduling is used. In order to avoid having code duplication (one with the decorator and one without for each algorithm) I implemented a wrapper class, called CompssTask, for the algorithm's execution with a single pyCOMPSS-decorated method.
+
+The class is constructed with all the required information for the task execution. During the initialization I also do the forementioned translation of the matrix to a python list. After the constructor the run method, which is the actual pyCOMPSs task executed on a worker, recreates the Condensed Matrix from the python list and executes the algorithm's clustering method. 
+
+After the execution of the algorithm it was necessary to again deassign the computed matrix because it is part of the class and, even if it's not a result, when the task is finished pyCOMPSs again tries to serialize the object and fails.
+
+\section{Other issues}
+
+
+When trying to generate traces with extrae (for MPI and sequential version) I got an Prody error. When trying to resize any kind of structure Prody detects that there is more than one reference to that structure (introduced by the instrumentation) and fails to do the resize. To avoid this I had to manually modify the Prody package and, for each resize, add the parameter \textit{refcheck=False}. This error is raised in order to avoid integrity problems when an object has more than one reference; however we know that the instrumentation will not modify nor actively use those structures so we can safely disable the reference's check. 
+
+Another issue was raised by some datasets. Depending on the computer and data when I try to recreate the condensed matrix on the pyCOMPSs task I get an incompatible format error. This happens when numpy stores the matrix data (in list format) as floats with 32 bits. The matrix constructor however requires that data to be in floats with 64 bits. To overcome this I found that numpy arrays have a method, \textit{data\_view('float64')}, to select which type of elements should be returned and thus allowing me to always format them as 64-bit floats and solve the issue.
+
+
+\section{Results}
+
 
 
 
