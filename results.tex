@@ -1,0 +1,39 @@
+\chapter{Results}
+
+
+This section describes the results of the refactor described in the previous section. 
+\section{Performance}
+
+
+
+\section{Usability}
+
+COMPSs programming model aims to ease the development and execution of applications. In this section I will evaluate these goals.
+
+First I will talk about the code refactor. As stated in \ref{subsec:pycompss} pyCOMPSs I tried to reduce the code to keep it simple. COMPSs is designed for people without parallelization knowledge, and thus, for sequential programs. I wanted to exploit the simplicity of COMPSs. In order to do it I emulated the process of writing the code directly for pyCOMPSs from a sequential program. This is the scenario I will first analyze.
+
+When talking about the complexity of a program one the first questions is about the code's size. Figuer ADDDDDDDD REFERENCE shows the comparison between the duplicated classes (the ones used on the original schedulers and the modified versions used when pyCOMPSs scheduler is selected). The comparison is done in number of characters because python conventions encourage the usage of line breaks so the results could be misleading.
+
+
+\begin{center}
+	\begin{tabular}{| R{3cm} | C{3cm} | C{3cm} |}
+		\hline
+		Class Name & Original & pyCOMPSs \\ 
+		\hline
+		\hline
+		Driver & 8180  &  7910 \\
+		PostProcessingDriver & 1531 & 2252 \\
+		
+		\hline
+	\end{tabular}
+	\captionof{table}{Human Resources Budget} 
+\end{center}
+
+
+Python is a language designed to be easy to read with strong coding conventions so I did not try to minimize the code. I coded in a normal fashion trying to make things clear. Bearing this in mind let's see how well fared the refactored code against the original one:
+
+
+
+
+
+\section{Miscellaneous}

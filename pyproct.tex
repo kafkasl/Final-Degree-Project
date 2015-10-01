@@ -1,4 +1,4 @@
-\chapter{pyProCT}
+\section{Software design description: pyProCT}
 
 
 
@@ -10,7 +10,7 @@ To schedule the execution of the algorithms uses \hyperref[sec:docs]{\textbf{pyS
 
 
 
-\section {Algorithms}
+\subsection {Algorithms}
 
 pyProCT uses the following five algorithms to find the best clustering. It also features a last one which clusters the data randomly. This one is used for comparative purposes so it won't have more consideration that the utility it provides for other's behaviour analysis.
 
@@ -26,7 +26,7 @@ pyProCT uses the following five algorithms to find the best clustering. It also 
 
 For more information about the actual implementation and parameter pyProCT dropbox documentation\footnote{ https://dl.dropboxusercontent.com/u/58918851/pyProCT-SupportingInformation.pdf} 
 
-\section{Execution Flow}
+\subsection{Execution Flow}
 \label{sec:execution_flow}
 
 The execution flow of pyProCT can be subdivided into four main sections linked to the JSON script structure:
@@ -40,7 +40,7 @@ The execution flow of pyProCT can be subdivided into four main sections linked t
 
 On the next sections each part is going to be described, both it's execution flow and the json parameters associated with it.
 
-\subsection{Global}
+\subsubsection{Global}
 
 The global section is the responsible of initializing everything for the execution. This part is located on the main.py file and ends up calling the corresponding driver with the correct parameters. This is the main.py structure:
 
@@ -87,7 +87,7 @@ The global section parameters that can be specified on the json file are divided
 \end{itemize}
 
 
-\subsection{Data}
+\subsubsection{Data}
 
 This section defines how the distance matrix should be build. Essentially it runs the DataDriver class' function run() with the WorkspaceHandler initialized on the Global section and the retrieved parameters. This DataDriver then initializes and returns to the driver the DataHandler and MatrixHandler to be used later. The first one is directly instantiated with the corresponding parameters. The second one, on the other hand, first loads the matrix calculator defined on matrix::method of the json control file. With this calculator, the data handler and the parameters, it computes and returns the desired matrix handler. 
 
@@ -129,7 +129,7 @@ The data section parameters specify the type and origin of the data, the method 
 \end{description}
 
 
-\subsection{Clustering}
+\subsubsection{Clustering}
 
 This section is the one performing the actual clustering exploration and evaluation of the results. 
 
@@ -202,7 +202,7 @@ The clustering section parameters that can be specified on the json file define 
 
 
 
-\subsection{Postprocess}
+\subsubsection{Postprocess}
 
 The postprocessing section's allows users to extract useful information about the clustering. This section is the only optional one amongst the four described. 
 

@@ -1,4 +1,4 @@
-\chapter{pyProCT-regression}
+\section{Validation method: pyProCT-regression}
 
 
 pyProCT-Regression is the software designed to validate the pyCOMPSs refactor code. It implements the so-called black-box validation method. The validator will take a list of tests to perform. First we need to generate the expected results with the original version or pyProCT, then we'll run the same tests with the new version and make sure that the output matches the expected results.
@@ -23,7 +23,7 @@ On the other hand, running the tester with "TEST" will also run the control scri
 
 The last three attributes allow us to use a single expected results dir with different scripts and schedulers, or use the new version of pyProCT with the same tests but on testing mode to validate the refactor. When validating that the original schedulers work as expected I also add other files to check such as the parameters.json and the clustering folders (containing information about the generated clustering).
 
-\section{Basic tests and issues}
+\subsection{Basic tests and issues}
 
 The basic tests validate each of the four sections of pyProCT (global, data, clusering, postprocess) incrementally. However once I started generating the MPI results I faced the first issue: MPI (and later also pyCOMPSs) scheduler need to be called with mpirun and runcompss. 
 
