@@ -4,65 +4,65 @@
 \contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Scope}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Methodology}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Limitations and Risks}{6}{section.1.5}
-\contentsline {section}{\numberline {1.6}Context}{7}{section.1.6}
-\contentsline {section}{\numberline {1.7}Stakeholders}{10}{section.1.7}
-\contentsline {section}{\numberline {1.8}State of the Art}{11}{section.1.8}
-\contentsline {section}{\numberline {1.9}Document Structure and Notes}{11}{section.1.9}
-\contentsline {chapter}{\numberline {2}Methods}{14}{chapter.2}
-\contentsline {section}{\numberline {2.1}Software design description: pyProCT}{14}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Algorithms}{15}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Execution Flow}{15}{subsection.2.1.2}
-\contentsline {subsubsection}{Global}{16}{section*.2}
-\contentsline {subsubsection}{Data}{19}{section*.5}
-\contentsline {subsubsection}{Clustering}{22}{section*.7}
-\contentsline {subsubsection}{Postprocess}{26}{section*.9}
-\contentsline {section}{\numberline {2.2}Analysis tools research}{29}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Motivation}{29}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Tic-tac-toe}{29}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}pyScheduler refactor}{30}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Instrumenting with Extrae}{31}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Visualizing with Paraver}{35}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Validation method: pyProCT-regression}{36}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Basic tests and issues}{38}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Refactor}{39}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Set up}{40}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}pyCOMPSs}{41}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Other issues}{44}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Results}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Performance}{45}{section.3.1}
-\contentsline {section}{\numberline {3.2}Usability}{45}{section.3.2}
-\contentsline {section}{\numberline {3.3}Miscellaneous}{46}{section.3.3}
-\contentsline {chapter}{\numberline {4}Conclusions}{47}{chapter.4}
-\contentsline {chapter}{\numberline {5}Glossary}{48}{chapter.5}
-\contentsline {chapter}{\numberline {6}Documentation}{51}{chapter.6}
-\contentsline {chapter}{\numberline {7}Temporal Planning}{53}{chapter.7}
-\contentsline {section}{\numberline {7.1}Overview}{53}{section.7.1}
-\contentsline {section}{\numberline {7.2}Task List}{53}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tasks Description}{54}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Project Management}{54}{subsection.7.3.1}
-\contentsline {subsubsection}{Resources list}{54}{section*.15}
-\contentsline {subsection}{\numberline {7.3.2}Code familiarization}{55}{subsection.7.3.2}
-\contentsline {subsubsection}{Resources list}{55}{section*.16}
-\contentsline {subsection}{\numberline {7.3.3}Analysis tools' research}{56}{subsection.7.3.3}
-\contentsline {subsubsection}{Resources list}{56}{section*.17}
-\contentsline {subsection}{\numberline {7.3.4}Common set up for all SCRUM cycles}{56}{subsection.7.3.4}
-\contentsline {subsubsection}{Resources list}{57}{section*.18}
-\contentsline {subsection}{\numberline {7.3.5}SCRUM iterations}{57}{subsection.7.3.5}
-\contentsline {subsubsection}{Resources list}{57}{section*.19}
-\contentsline {subsection}{\numberline {7.3.6}Global performance analysis}{58}{subsection.7.3.6}
-\contentsline {subsubsection}{Resources list}{58}{section*.20}
-\contentsline {section}{\numberline {7.4}Gantt and PERT charts}{58}{section.7.4}
-\contentsline {chapter}{\numberline {8}Budget}{59}{chapter.8}
-\contentsline {section}{\numberline {8.1}Human Resources}{59}{section.8.1}
-\contentsline {section}{\numberline {8.2}Hardware Resources}{60}{section.8.2}
-\contentsline {section}{\numberline {8.3}Software Resources}{60}{section.8.3}
-\contentsline {section}{\numberline {8.4}Total Budget}{62}{section.8.4}
-\contentsline {chapter}{\numberline {9}Sustainability}{63}{chapter.9}
-\contentsline {section}{\numberline {9.1}Economic}{63}{section.9.1}
-\contentsline {section}{\numberline {9.2}Social}{64}{section.9.2}
-\contentsline {section}{\numberline {9.3}Environmental}{64}{section.9.3}
-\contentsline {section}{\numberline {9.4}Context}{65}{section.9.4}
-\contentsline {section}{\numberline {9.5}Stakeholders}{68}{section.9.5}
-\contentsline {section}{\numberline {9.6}State of the Art}{69}{section.9.6}
-\contentsline {section}{References}{69}{section.9.6}
+\contentsline {section}{\numberline {1.5}Limitations and Risks}{7}{section.1.5}
+\contentsline {section}{\numberline {1.6}Context}{8}{section.1.6}
+\contentsline {section}{\numberline {1.7}Stakeholders}{11}{section.1.7}
+\contentsline {section}{\numberline {1.8}State of the Art}{12}{section.1.8}
+\contentsline {section}{\numberline {1.9}Document Structure and Notes}{12}{section.1.9}
+\contentsline {chapter}{\numberline {2}Methods}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Software design description: pyProCT}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Algorithms}{16}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Execution Flow}{16}{subsection.2.1.2}
+\contentsline {subsubsection}{Global}{17}{section*.2}
+\contentsline {subsubsection}{Data}{20}{section*.5}
+\contentsline {subsubsection}{Clustering}{23}{section*.7}
+\contentsline {subsubsection}{Postprocess}{27}{section*.9}
+\contentsline {section}{\numberline {2.2}Code exploration and tools research}{30}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Motivation}{30}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Test program description}{30}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}pyScheduler refactor}{31}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Instrumenting with Extrae}{32}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Visualizing with Paraver}{37}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Validation method: pyProCT-regression}{38}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Basic tests and issues}{40}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Refactor}{41}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Set up}{42}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}pyCOMPSs}{43}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Other issues}{46}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Results}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Performance}{47}{section.3.1}
+\contentsline {section}{\numberline {3.2}Usability}{47}{section.3.2}
+\contentsline {section}{\numberline {3.3}Miscellaneous}{48}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusions}{49}{chapter.4}
+\contentsline {chapter}{\numberline {5}Glossary}{50}{chapter.5}
+\contentsline {chapter}{\numberline {6}Documentation}{53}{chapter.6}
+\contentsline {chapter}{\numberline {7}Temporal Planning}{55}{chapter.7}
+\contentsline {section}{\numberline {7.1}Overview}{55}{section.7.1}
+\contentsline {section}{\numberline {7.2}Task List}{55}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tasks Description}{56}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Project Management}{56}{subsection.7.3.1}
+\contentsline {subsubsection}{Resources list}{56}{section*.15}
+\contentsline {subsection}{\numberline {7.3.2}Code familiarization}{57}{subsection.7.3.2}
+\contentsline {subsubsection}{Resources list}{57}{section*.16}
+\contentsline {subsection}{\numberline {7.3.3}Analysis tools' research}{58}{subsection.7.3.3}
+\contentsline {subsubsection}{Resources list}{58}{section*.17}
+\contentsline {subsection}{\numberline {7.3.4}Common set up for all SCRUM cycles}{58}{subsection.7.3.4}
+\contentsline {subsubsection}{Resources list}{59}{section*.18}
+\contentsline {subsection}{\numberline {7.3.5}SCRUM iterations}{59}{subsection.7.3.5}
+\contentsline {subsubsection}{Resources list}{59}{section*.19}
+\contentsline {subsection}{\numberline {7.3.6}Global performance analysis}{60}{subsection.7.3.6}
+\contentsline {subsubsection}{Resources list}{60}{section*.20}
+\contentsline {section}{\numberline {7.4}Gantt and PERT charts}{60}{section.7.4}
+\contentsline {chapter}{\numberline {8}Budget}{61}{chapter.8}
+\contentsline {section}{\numberline {8.1}Human Resources}{61}{section.8.1}
+\contentsline {section}{\numberline {8.2}Hardware Resources}{62}{section.8.2}
+\contentsline {section}{\numberline {8.3}Software Resources}{62}{section.8.3}
+\contentsline {section}{\numberline {8.4}Total Budget}{64}{section.8.4}
+\contentsline {chapter}{\numberline {9}Sustainability}{65}{chapter.9}
+\contentsline {section}{\numberline {9.1}Economic}{65}{section.9.1}
+\contentsline {section}{\numberline {9.2}Social}{66}{section.9.2}
+\contentsline {section}{\numberline {9.3}Environmental}{66}{section.9.3}
+\contentsline {section}{\numberline {9.4}Context}{67}{section.9.4}
+\contentsline {section}{\numberline {9.5}Stakeholders}{70}{section.9.5}
+\contentsline {section}{\numberline {9.6}State of the Art}{71}{section.9.6}
+\contentsline {section}{References}{71}{section.9.6}

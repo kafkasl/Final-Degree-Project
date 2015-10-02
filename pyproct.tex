@@ -4,7 +4,7 @@
 
 pyProCT is a clustering analysis software. As we stated earlier, correct usage of clustering analysis methods is not easy: right algorithm selection, better parameters estimation or appropriate result analysis are just some of the problems that CA tools user faces. However, we also showed that CA is present in a lot of different subjects and is used, or would be useful, to people with  limited knowledge both on algorithmic methods and statistics. On the other way around we also find that CA specialists may not be able to correctly assess the results of a clustering due to the nature of the data itself.
 
-This clustering tool aims to reduce this gap by using five different algorithms and allowing the user to define a clustering goal or hypothesis. With this and some more options, most related to the parameter estimation of each method, it tries to find the best algorithm and it's parameters for the inputted data. This way, through a more "semantic" approach we expect to guide pyProCT to find the combination that will produce the best clustering, without forcing the user to deeply understand the pros and cons each method w.r.t to an specific kind of data.
+This clustering tool aims to reduce this gap by using five different algorithms and allowing the user to define a clustering goal or hypothesis. With this and some more options, most related to the parameter estimation of each method, it tries to find the best algorithm and it's parameters for the inputted data. This way, through a more "semantic" approach users can "guide" pyProCT without forcing them to deeply understand the pros and cons each method w.r.t to an specific kind of data.
 
 To schedule the execution of the algorithms uses \hyperref[sec:docs]{\textbf{pyScheduler} controller}. It features three modes: sequential, parallel, using python's multiprocessing module, and parallel using MPI. The refactor will add fourth mode to run the tool with pyCOMPSs. It is important to note that the modifications will be limited to pyProCT, so COMPSs will act as a substitute of the current controller, not as a new scheduling method inside pyScheduler.
 
@@ -12,7 +12,7 @@ To schedule the execution of the algorithms uses \hyperref[sec:docs]{\textbf{pyS
 
 \subsection {Algorithms}
 
-pyProCT uses the following five algorithms to find the best clustering. It also features a last one which clusters the data randomly. This one is used for comparative purposes so it won't have more consideration that the utility it provides for other's behaviour analysis.
+pyProCT uses the following five algorithms to find the best clustering. It also has an extra one which clusters the data randomly. This one is used for comparative purposes so it won't have more consideration that the utility it provides for other's behaviour analysis.
 
 \begin{enumerate}
 
@@ -24,7 +24,7 @@ pyProCT uses the following five algorithms to find the best clustering. It also 
 
 \end{enumerate}
 
-For more information about the actual implementation and parameter pyProCT dropbox documentation\footnote{ https://dl.dropboxusercontent.com/u/58918851/pyProCT-SupportingInformation.pdf} 
+For more information about the actual implementation and parameter estimation of pyProCT check dropbox documentation on \ref{sec:docs} Documentation section.
 
 \subsection{Execution Flow}
 \label{sec:execution_flow}
@@ -89,7 +89,7 @@ The global section parameters that can be specified on the json file are divided
 
 \subsubsection{Data}
 
-This section defines how the distance matrix should be build. Essentially it runs the DataDriver class' function run() with the WorkspaceHandler initialized on the Global section and the retrieved parameters. This DataDriver then initializes and returns to the driver the DataHandler and MatrixHandler to be used later. The first one is directly instantiated with the corresponding parameters. The second one, on the other hand, first loads the matrix calculator defined on matrix::method of the json control file. With this calculator, the data handler and the parameters, it computes and returns the desired matrix handler. 
+This section defines how the distance matrix should be build. Essentially it runs the \textit{DataDriver}'s method \textit{run()} with the \textit{WorkspaceHandler} initialized on the global section and the retrieved parameters. This data driver initializes and returns to the main driver the \textit{DataHandler} and \textit{MatrixHandler} to be used later. The first one is directly instantiated with the corresponding parameters. The second one, on the other hand, first loads the matrix calculator defined on matrix's method of the json control file. With this calculator, the data handler and the parameters, it computes and returns the desired matrix handler. 
 
 The following figure shows a simplified sequence diagram of this process:
 
@@ -133,21 +133,21 @@ The data section parameters specify the type and origin of the data, the method 
 
 This section is the one performing the actual clustering exploration and evaluation of the results. 
 
-As \hyperref[fig:clustering_section]{Figure \ref{fig:clustering_section}} shows, the driver calls it's clustering\_section() function which checks wether it needs to perform the exploration or load an existing clustering. 
+As \hyperref[fig:clustering_section]{Figure \ref{fig:clustering_section}} shows, the driver calls it's \textit{clustering\_section()} function which checks wether it needs to perform the exploration or load an existing clustering. 
 
-If the method selected is "load" then the function from\_dic(...) turns the data into a Clustering instance. 
+If the method selected is "load" then the function \textit{from\_dic(...)} turns the data into a Clustering instance. 
 
-If "generate" is the selected method then it calls perform\_clustering\_exploration(...) which initializes and runs the ClusteringProtocol class. This one, in turn, runs and initializes the classes  ClusteringExplorer, ClusteringFilter, AnalysisRunner and the BestClusteringSelector.
+If "generate" is the selected method then it calls \textit{perform\_clustering\_exploration(...)} which initializes and runs the \textit{ClusteringProtocol} class. This one, in turn, runs and initializes the classes  \textit{ClusteringExplorer}, \textit{ClusteringFilter}, \textit{AnalysisRunner} and the \textit{BestClusteringSelector}.
 
-This ClusteringExplorer deals with the actual exploration pipeline. It generates diverse parameter structures for each defined CA algorithm and adds them to the scheduler tasks queue, runs the scheduler and returns the resulting clustering\_info structures. 
+This clustering explorer deals with the actual exploration pipeline. It generates diverse parameter structures for each defined CA algorithm and adds them to the scheduler tasks queue, runs the scheduler and returns the resulting clustering\_info structures. 
 
-The ClusteringFilter tries to reduce the size of the clustering. To achieve this it eliminates the clusters whose parameters are outside the defined ranges on the evaluation section, removes the not selected clusters and checks that there are no repeated clusterings amongst the selected ones.
+The clustering filter tries to reduce the size of the clustering. To achieve this it eliminates the clusters whose parameters are outside the defined ranges on the evaluation section, removes the not selected clusters and checks that there are no repeated clusterings amongst the selected ones.
 
-The AnalysisRunner is the one handling the evaluation of the selected clusterings. Similarly to ClusteringProtocol, it creates an scheduler instance, queues the parametrization of each clustering analysis into it and runs it. Finally, it attaches the results to the clustering structure evaluated.
+The analysis' runner is the one handling the evaluation of the selected clusterings. Similarly to \textit{ClusteringProtocol}, it creates an scheduler instance, queues the parametrization of each clustering analysis into it and runs it. Finally, it attaches the results to the clustering structure evaluated.
 
 The BestClusteringSelector normalizes the calculated evaluations, scores each evaluation with the defined criteria and finally returns the id with higher score and the score itself.
 
-Finally the ClusteringProtocol returns the clustering\_results containing:  best\_clustering\_id, selected\_clusterings, not\_selected\_clusterings all\_scores. This results are then returned to the Driver for the postprocessing section.
+Finally the ClusteringProtocol returns the clustering results containing:  \textit{best\_clustering\_id}, \textit{selected\_clusterings}, \textit{not\_selected\_clusterings} and \textit{all\_scores}. This results are then returned to the driver for the postprocessing section.
 
 \begin{landscape}
 \begin{figure}
@@ -165,7 +165,7 @@ The clustering section parameters that can be specified on the json file define 
 \item [Generation] \hfil
 \begin{description}
 \item [Method,] selects wether we want to load or calculate the best clustering info. If it's loaded it will use the json dictionary defined on clustering::generation::clusters.
-\item [Clusters,] clustering data if the method if "load". Each cluster object must define: id, prototype and elements.
+\item [Clusters,] clustering data if the method is "load". Each cluster object must define: id, prototype and elements.
 \end{description}
 \item [Algorithms,] \hfil \\for each desired algorithm to use of the six available (dbscan, gromos, hierarchical, kmedoids, random and spectral) defines it's parameters. All algorithms share the 'max', defining the maximim number of parametrizations for the algorithm, and the 'parameters' properties.
 \begin{description}
@@ -183,7 +183,7 @@ The clustering section parameters that can be specified on the json file define 
 \end{description}
 \item [Evaluation] \hfil
 \begin{description}
-\item [Minimum clusters,] minimum number of clusters a clustering must contain to be evaluated.
+\item [Minimum clusters,] minimum number of clusters each clustering must contain to be evaluated.
 \item [Maximum clusters,] maximum number of clusters a clustering must contain to be evaluated.
 \item [Minimum cluster size,] any cluster smaller than this threshold will be considered noise (thus increasing the clustering noise).
 \item [Minimum noise,] clusterings with higher noise than this threshold won't be evaluated.

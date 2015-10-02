@@ -4,10 +4,10 @@
 pyProCT-Regression is the software designed to validate the pyCOMPSs refactor code. It implements the so-called black-box validation method. The validator will take a list of tests to perform. First we need to generate the expected results with the original version or pyProCT, then we'll run the same tests with the new version and make sure that the output matches the expected results.
 
 
-pyProCT results depend on the parameters defined on the control script because we can select which results to save, which format, wether we want to save the computed matrix (and it's image) and so on (see \hyperref[sec:execution_flow]{Section \ref{sec:execution_flow}} for more info). Because of that the validator needs to be flexible, allowing to define more or less files to check. On the other hand, we have different two different test scenarios: one, validating the results of the original version against the refactored one, two, validate the new scheduler against known results of the other schedulers.
+pyProCT results depend on the parameters defined on the control script because we can select which results to save, which format, wether we want to save the computed matrix (and it's image) and so on (see \hyperref[sec:execution_flow]{Section \ref{sec:execution_flow}} for more info). Because of that the validator needs to be flexible, allowing to define more or less files to check. On the other hand, we have two different test scenarios: one is to validate the results of the original version against the refactor, and the other to validate the new scheduler against known results of the other schedulers.
 
-To achieve this behaviour Regression takes a test list as input with all the information it needs to check for each test scenario. 
-Each test has a name and description and the following attributes.
+To achieve this behaviour, Regression takes a test list as input with all the information it needs to check for each test scenario. 
+Each test has the following attributes.
 
 \begin{description}
 \item [Name,] a unique test name.
