@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  2 OCT 2015 18:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  4 OCT 2015 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -763,7 +763,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [15
 
 ]
-[16] <img/global.png, id=406, 895.58118pt x 1351.87411pt>
+[16] <img/global.png, id=393, 895.58118pt x 1351.87411pt>
 File: img/global.png Graphic file (type png)
  <use img/global.png>
 Package pdftex.def Info: img/global.png used on input line 49.
@@ -773,7 +773,7 @@ Package pdftex.def Info: img/global.png used on input line 49.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17] [18 <./img/global.png>]
-<img/global_sequence_driver.jpg, id=417, 1279.78125pt x 732.7375pt>
+<img/global_sequence_driver.jpg, id=404, 1279.78125pt x 732.7375pt>
 File: img/global_sequence_driver.jpg Graphic file (type jpg)
 
 <use img/global_sequence_driver.jpg>
@@ -793,7 +793,7 @@ Overfull \hbox (4.2598pt too wide) in paragraph at lines 92--93
 [20
 
 
-] [21] <img/data_sequence_driver.png, id=433, 1925.78294pt x 1303.69412pt>
+] [21] <img/data_sequence_driver.png, id=420, 1925.78294pt x 1303.69412pt>
 File: img/data_sequence_driver.png Graphic file (type png)
 
 <use img/data_sequence_driver.png>
@@ -807,7 +807,7 @@ LaTeX Warning: Float too large for page by 3.07072pt on input line 100.
 
 
 ] [24]
-<img/clustering_sequence_driver.png, id=452, 2426.0047pt x 1677.79765pt>
+<img/clustering_sequence_driver.png, id=439, 2426.0047pt x 1677.79765pt>
 File: img/clustering_sequence_driver.png Graphic file (type png)
 
 <use img/clustering_sequence_driver.png>
@@ -822,7 +822,7 @@ LaTeX Warning: Float too large for page by 13.06657pt on input line 157.
 
 
 ] [27]
-<img/postprocess_sequence_driver.png, id=470, 2002.30412pt x 1306.52823pt>
+<img/postprocess_sequence_driver.png, id=457, 2002.30412pt x 1306.52823pt>
 File: img/postprocess_sequence_driver.png Graphic file (type png)
 
 <use img/postprocess_sequence_driver.png>
@@ -844,7 +844,7 @@ Overfull \hbox (12.54726pt too wide) in paragraph at lines 57--58
 de with \T1/cmr/m/it/12 pyex-trae.eventandcounters(type,
  []
 
-[33] [34] [35] <img/tic-tac-toe.png, id=516, 2030.6453pt x 1828.00589pt>
+[33] [34] [35] <img/tic-tac-toe.png, id=503, 2030.6453pt x 1828.00589pt>
 File: img/tic-tac-toe.png Graphic file (type png)
 
 <use img/tic-tac-toe.png>
@@ -859,7 +859,7 @@ LaTeX Warning: Float too large for page by 53.05968pt on input line 84.
 LaTeX Warning: Hyper reference `fig:fig:ttt-python-funcs-seq' on page 37 undefi
 ned on input line 95.
 
-<img/ttt_500_python_funcsG11.png, id=522, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG11.png, id=509, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG11.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG11.png>
@@ -867,7 +867,7 @@ Package pdftex.def Info: img/ttt_500_python_funcsG11.png used on input line 99.
 
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/ttt_500_python_funcsG12.png, id=523, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG12.png, id=510, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG12.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG12.png>
@@ -875,7 +875,7 @@ Package pdftex.def Info: img/ttt_500_python_funcsG12.png used on input line 100
 .
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/ttt_500_python_funcsG13.png, id=524, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG13.png, id=511, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG13.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG13.png>
@@ -895,7 +895,7 @@ LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 37 undefined on in
 put line 107.
 
 
-<img/New_window_1_2DZoom_range_[1,6]@test.png, id=529, 897.3525pt x 349.305pt>
+<img/New_window_1_2DZoom_range_[1,6]@test.png, id=516, 897.3525pt x 349.305pt>
 File: img/New_window_1_2DZoom_range_[1,6]@test.png Graphic file (type png)
 
 <use img/New_window_1_2DZoom_range_[1,6]@test.png>
@@ -906,14 +906,14 @@ nput line 111.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/cluster_graph_mpi.png, id=530, 602.25pt x 132.495pt>
+<img/cluster_graph_mpi.png, id=517, 602.25pt x 132.495pt>
 File: img/cluster_graph_mpi.png Graphic file (type png)
 
 <use img/cluster_graph_mpi.png>
 Package pdftex.def Info: img/cluster_graph_mpi.png used on input line 119.
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/cluster_mpi_IPC.png, id=531, 642.4pt x 401.5pt>
+<img/cluster_mpi_IPC.png, id=518, 642.4pt x 401.5pt>
 File: img/cluster_mpi_IPC.png Graphic file (type png)
 
 <use img/cluster_mpi_IPC.png>
@@ -923,7 +923,10 @@ Package pdftex.def Info: img/cluster_mpi_IPC.png used on input line 120.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./regression.tex [37
+) (./regression.tex
+Underfull \vbox (badness 4954) has occurred while \output is active []
+
+ [37
 
 
 ]
@@ -940,28 +943,28 @@ ask() \T1/cmr/m/n/12 dec-o-ra-tor and the \T1/cmr/m/it/12 obj = compss_wait_on(
 obj)
  []
 
-[44] [45]) (./results.tex [46]
+[44] [45]) (./results.tex [46] [47]
 Chapter 3.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 29.
+(caption)                particular \caption on input line 33.
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 2941) has occurred while \output is active []
+Underfull \vbox (badness 6575) has occurred while \output is active []
 
- [47
+ [48
 
 ])
-(./conclusion.tex [48]
+(./conclusion.tex [49]
 Chapter 4.
-) (./glossary.tex [49
+) (./glossary.tex [50
 
 ]
 Chapter 5.
-[50
+[51
 
-] [51] [52]
+] [52] [53]
 Chapter 6.
 
 Overfull \hbox (47.39081pt too wide) in paragraph at lines 69--71
@@ -975,7 +978,7 @@ Overfull \hbox (6.7917pt too wide) in paragraph at lines 71--73
 ide.html?tracked=true 
  []
 
-[53
+[54
 
 ]
 Overfull \hbox (26.43561pt too wide) in paragraph at lines 78--79
@@ -995,127 +998,94 @@ Overfull \hbox (83.60486pt too wide) in paragraph at lines 83--85
 rformance_tools/w1_introtools.pdf 
  []
 
-) (./temporal_planning.tex [54]
+) (./temporal_planning.tex [55]
 Chapter 7.
-[55
+[56
 
-] [56] [57] [58] [59]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+] [57] [58] [59] [60]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
-<img/gantt.png, id=666, 1643.13875pt x 199.74625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+<img/gantt.png, id=658, 1284.8pt x 246.9225pt>
 File: img/gantt.png Graphic file (type png)
  <use img/gantt.png>
-Package pdftex.def Info: img/gantt.png used on input line 127.
-(pdftex.def)             Requested size: 483.69687pt x 58.79967pt.
+Package pdftex.def Info: img/gantt.png used on input line 125.
+(pdftex.def)             Requested size: 483.69687pt x 92.96117pt.
 
-<img/pert.png, id=667, 848.16875pt x 175.65625pt>
+<img/pert.png, id=659, 677.53125pt x 160.6pt>
 File: img/pert.png Graphic file (type png)
  <use img/pert.png>
-Package pdftex.def Info: img/pert.png used on input line 131.
-(pdftex.def)             Requested size: 483.69687pt x 100.17334pt.
-)
-(./budget.tex [60 <./img/gantt.png> <./img/pert.png (PNG copy)>]
+Package pdftex.def Info: img/pert.png used on input line 129.
+(pdftex.def)             Requested size: 483.69687pt x 114.65903pt.
+) (./budget.tex [61 <./img/gantt.png (PNG copy)> <./img/pert.png (PNG copy)>]
 Chapter 8.
+[62
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-[61
-
-]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 26.
+(caption)                particular \caption on input line 28.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 49.
+(caption)                particular \caption on input line 51.
 See the caption package documentation for explanation.
 
-[62]
+[63]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 95.
+(caption)                particular \caption on input line 97.
 See the caption package documentation for explanation.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [64]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 129.
+(caption)                particular \caption on input line 131.
 See the caption package documentation for explanation.
 
-) (./sustainability.tex [64]
+[65]) (./sustainability.tex [66]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65
+ [67
 
 ]
-[66]) (./context.tex
-
-LaTeX Warning: Citation `Laney' on page 67 undefined on input line 6.
-
-[67] [68]
-
-LaTeX Warning: Citation `Ayech2015' on page 69 undefined on input line 46.
-
-
-LaTeX Warning: Citation `Burca2014' on page 69 undefined on input line 47.
-
-
-LaTeX Warning: Citation `Muller2014' on page 69 undefined on input line 47.
-
-[69]
-
-LaTeX Warning: Citation `Chan2014' on page 70 undefined on input line 48.
-
-
-LaTeX Warning: Citation `Cortes2007' on page 70 undefined on input line 49.
-
-
-LaTeX Warning: Citation `Nayak2015' on page 70 undefined on input line 62.
-
-[70]
-
-LaTeX Warning: Citation `Kupski2015' on page 71 undefined on input line 64.
-
-
-LaTeX Warning: Citation `Adler2015' on page 71 undefined on input line 64.
-
-) (./memoria.bbl [71])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
- [72
+[68]) (./memoria.bbl [69])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+ [70
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (./memoria.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: F4C7CCAA0F7C5DEFCC9FA46B33924B6C;3569.
+(rerunfilecheck)             Checksum: A7191C8D69831F0B9C7A7D2E01C53829;3412.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 9616 strings out of 495028
- 141319 string characters out of 6181498
- 242064 words of memory out of 5000000
+ 9608 strings out of 495028
+ 141235 string characters out of 6181498
+ 246227 words of memory out of 5000000
  12394 multiletter control sequences out of 15000+600000
  22261 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1142,10 +1112,10 @@ pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/f
 eymr10.pfb>
-Output written on memoria.pdf (75 pages, 677519 bytes).
+Output written on memoria.pdf (73 pages, 675042 bytes).
 PDF statistics:
- 1327 PDF objects out of 1440 (max. 8388607)
- 736 compressed objects within 8 object streams
- 198 named destinations out of 1000 (max. 500000)
- 527 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1301 PDF objects out of 1440 (max. 8388607)
+ 717 compressed objects within 8 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 

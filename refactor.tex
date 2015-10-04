@@ -1,4 +1,5 @@
 \section{Refactor}
+\label{sec:refactor}
 
 This section will walk you through all the refactor process. It will provide a full description of the issues found, wether they were solved or not, the design decisions made and the reasons behind them, and all the information relevant for debugging, testing and further developing both pyCOMPSs and pyProCT. 
 
@@ -33,7 +34,7 @@ Python is not a compiled language, so this compilation problem actually comes fr
 \subsection{pyCOMPSs}
 \label{subsec:pycompss}
 
-Prior to starting the refactor I analyzed which would be the best way to parallelize it. pyCOMPSs works by using python's decorators to define some functions as \textit{COMPSs' tasks}. These tasks are executed on previously defined resources such as a MN3 node or a cloud. For each task the framework checks wether that function's parameters depend on some previous task; if it has no dependencies then the task is assigned to a resource which runs it. 
+Prior to starting the refactor I analyzed which would be the best way to parallelize it. pyCOMPSs works by using python's decorators to define some functions as \textit{COMPSs' tasks}. These tasks are executed on previously defined resources such as a MN3 node or a cloud. For each task the framework checks whether that function's parameters depend on some previous task; if it has no dependencies then the task is assigned to a resource which runs it. 
 
 pyProcT clustering and postprocessing sections, as previously stated, are embarrassingly parallel: all algorithm's executions depend only on the distance's matrix calculation; the postprocessing actions all depend on the best clustering (that is to say: the whole clustering section). Knowing this we decided to define as task each algorithm execution and each postprocessing action.
 
@@ -67,6 +68,8 @@ With this structure then it would be necessary to decorate the \textit{perform\_
 The class is constructed with all the required information for the task execution. During the initialization I also do the forementioned translation of the matrix to a python list. After the constructor the run method, which is the actual pyCOMPSs task executed on a worker, recreates the Condensed Matrix from the python list and executes the algorithm's clustering method. 
 
 After the execution of the algorithm it was necessary to again deassign the computed matrix because it is part of the class and, even if it's not a result, when the task is finished pyCOMPSs again tries to serialize the object and fails.
+
+Finally I will talk about the hardware abstraction of COMPSs. Thanks to it the user does not need to worry a
 
 \subsection{Other issues}
 

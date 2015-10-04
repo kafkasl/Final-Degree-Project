@@ -8,7 +8,7 @@
 \BOOKMARK [1][-]{section.1.7}{Stakeholders}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.8}{State of the Art}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.9}{Document Structure and Notes}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter.2}{Methods}{}% 11
+\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Software design description: pyProCT}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.1.1}{Algorithms}{section.2.1}% 13
 \BOOKMARK [2][-]{subsection.2.1.2}{Execution Flow}{section.2.1}% 14
@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.2.4.3}{Other issues}{section.2.4}% 26
 \BOOKMARK [0][-]{chapter.3}{Results}{}% 27
 \BOOKMARK [1][-]{section.3.1}{Performance}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{Usability}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Programming Model}{chapter.3}% 29
 \BOOKMARK [1][-]{section.3.3}{Miscellaneous}{chapter.3}% 30
 \BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 31
 \BOOKMARK [0][-]{chapter.5}{Glossary}{}% 32
@@ -36,7 +36,7 @@
 \BOOKMARK [1][-]{section.7.2}{Task List}{chapter.7}% 36
 \BOOKMARK [1][-]{section.7.3}{Tasks Description}{chapter.7}% 37
 \BOOKMARK [2][-]{subsection.7.3.1}{Project Management}{section.7.3}% 38
-\BOOKMARK [2][-]{subsection.7.3.2}{Code familiarization}{section.7.3}% 39
+\BOOKMARK [2][-]{subsection.7.3.2}{Software design description}{section.7.3}% 39
 \BOOKMARK [2][-]{subsection.7.3.3}{Analysis tools' research}{section.7.3}% 40
 \BOOKMARK [2][-]{subsection.7.3.4}{Common set up for all SCRUM cycles}{section.7.3}% 41
 \BOOKMARK [2][-]{subsection.7.3.5}{SCRUM iterations}{section.7.3}% 42
@@ -51,7 +51,4 @@
 \BOOKMARK [1][-]{section.9.1}{Economic}{chapter.9}% 51
 \BOOKMARK [1][-]{section.9.2}{Social}{chapter.9}% 52
 \BOOKMARK [1][-]{section.9.3}{Environmental}{chapter.9}% 53
-\BOOKMARK [1][-]{section.9.4}{Context}{chapter.9}% 54
-\BOOKMARK [1][-]{section.9.5}{Stakeholders}{chapter.9}% 55
-\BOOKMARK [1][-]{section.9.6}{State of the Art}{chapter.9}% 56
-\BOOKMARK [1][-]{section.9.6}{References}{chapter.9}% 57
+\BOOKMARK [1][-]{section.9.3}{References}{chapter.9}% 54

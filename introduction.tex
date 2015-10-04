@@ -150,16 +150,19 @@ Apart from the clustering analysis techniques the focus of the project is the CO
 
 \section{Document Structure and Notes}
 
-This section will give an overall view of how the document is structured. I decided to give this document sort of a chronological order because of two reasons: first, following along the work I did makes the whole document easier to understand and second, the work has been incremental, each iteration relying upon the previous decisions, so it seems reasonable to report the results and problems in the order they appeared. 
+This section will give an overall view of how the document is structured. I decided to give section \ref{chap:method}. Methodology a chronological order because of two reasons: first, following along the work I did makes the whole document easier to understand and second, the work has been incremental, each iteration relying upon the previous decisions, so it seems reasonable to report the results and problems in the order they appeared. 
 
 
-The structure will be similar to the project methodology described on \ref{sec:temporal_planning}. \hyperref[sec:temporal_planning]{Temporal Planning section}. First I will describe how pyProCT works which matches the Code Familiarization task. 
+The structure will be similar to the project methodology described in the \hyperref[sec:temporal_planning]{Temporal Planning section}.
 
-The two next goals were to find which tools to use and to set up the workspace to start de Scrum iterations. To do so I wrote an small program in order to test many things and find possible solutions on a much smaller scale than pyProCT. It helped me to see and learn how to deal with reproducibility problems amongst other validation issues, understand how th current pyProCT's scheduler works and finally to test and learn how to use the analysis tools. 
+Section \ref{sec:sdd}. Software Design Description: pyProCT contains an exhaustive description of the software. This mirrors the initial work spent understanding the internals and mechanics of pyProCT before the refactor.
 
-The Tic-Tac-Toe section describes all the scheduler and analysis tools information. The next step, prior to start working on the refactor, was to set up a reliable validation method to ensure the correctness of the new versions. pyProcT-Regression is the developed software used for black-box validation; on the  Regression section I will describe all the information related with validation (because I deemed excessive and useless to develop a full testing software for the tic-tac-toe game).
+Section \ref{chap:ttt} describes the process I followed to find which tools to use and to set up the workspace to start the Scrum iterations. To do so, I wrote an small program in order to test many things and find possible solutions on a much smaller scale than pyProCT. It helped me to see and learn how to deal with reproducibility problems amongst other validation issues, understand how the current pyProCT's scheduler works and test and use the analysis tools. 
 
-Finally the refactor section contains the work related with the integration of a pyCOMPSs scheduler for pyProCT. 
+In section \ref{sec:regression} I set up a reliable validation method to ensure the correctness of the new versions. pyProcT-Regression is the developed software used for black-box validation. In this section I will describe all the information related with validation (because I deemed excessive and useless to develop a full testing software for the tic-tac-toe game).
+
+Section \ref{sec:refactor}. Refactor follows the development of the pyCOMPSs for pyProCT.
+
 
 As a final remark I want to say that all tools used have documentation. However being in development some of them are outdated. Wherever the documentation of the tool is good enough I just described the features or issues directly related with this project. 
 
