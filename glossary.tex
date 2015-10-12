@@ -1,17 +1,31 @@
 \chapter{Glossary}
 
-This section describes all the technical terms used and provides a list to the documentations mentioned throughout this document.
+This section describes the technical terms used in this document. 
 
 \label{sec:terms}
 
 \begin{description}
+
+
+
+
+\item [.bashrc,] is a shell script that Bash runs whenever it is started interactively (when login into MN3 for example).
+
+\item [Cloud computing] is a model for enabling ubiquitous, convenient, on-demand access to a shared pool of configurable computing resources. Cloud computing and storage solutions provide users and enterprises with various capabilities to store and process their data in third-party data centers.
+
 \item [Cluster analysis(CA), ] it the task of grouping a given set of objects in way that items on the same group or cluster are more similar (in some sense) to each other than to those in other groups. 
 
-\item [Pip,] is a package management system used to install and manage software packages written in Python.
+\item [COMPSs,] is a programming model which aims to ease the development of applications for distributed infrastructures. It features a runtime system that exploits the inherent parallelism of applications at execution time.
 
 \item [Cython,] programming language is a superset of Python with a foreign function interface for invoking C/C++ routines and the ability to declare the static type of subroutine parameters and results, local variables, and class attributes.
-\item [COMPSs,] is a programming model which aims to ease the development of applications for distributed infrastructures. It features a runtime system that exploits the inherent parallelism of applications at execution time.
+
 \item [Decorator (python),] is a function that takes another function and extends the behavior of the latter function without explicitly modifying it.
+
+\item [Elasticity], in cloud computing, is defined as the degree to which a system (or a particular cloud layer) autonomously adapts its capacity to workload over time.
+
+\item[Framework,] is often a layered structure indicating what kind of programs can or should be built and how they would interrelate. Some include actual programs, specify API's, or offer programming tools for using the them.
+
+\item [High Performance Computing (HPC)] is the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business.
 \item [Pickle,] is the python standard mechanism for object serialization; pickling is the common term among Python programmers for serialization (unpickling for deserializing).
 \item [Pragma,] directives offer a way for each compiler to offer machine- and operating system-specific features while retaining overall compatibility with the C and C++ languages.
 \item[pyCOMPSs,] python application programming interface (API) for COMPSs.
@@ -23,72 +37,15 @@ in a clean fashion
 \item[MPI,] is a standardized and portable message-passing system designed to function on a wide variety of parallel computers.
 \item [Non-blocking I/O (NIO or "New I/O"),] is a collection of Java programming language APIs that offer features for intensive I/O operations. 
 \item [Open Multi-Processing (OpenMP),] is an API that supports multi-platform shared memory multiprocessing programming. It consists of a set of compiler directives, library routines, and environment variables that influence run-time behavior
+\item [Pip,] is a package management system used to install and manage software packages written in Python.
 \item [ProDy,] is a free and open-source Python package for protein structural dynamics analysis. It is designed as a flexible and responsive API suitable for interactive usage and application development.
+\item [Programming model or paradigm] is a fundamental style of computer programming, serving as a way of building the structure and elements of computer programs.
 \item [Root-mean-square deviation (RMSD),] is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins.
+\item [Scalability] is the capability of a system, network, or process to handle a growing amount of work, or its potential to be enlarged in order to accommodate that growth.
 \item [setup.py,] is a python file, which usually tells you that the module/package you are about to install have been packaged and distributed with Distutils, which is the standard for distributing Python Modules. Allows to easily compile and install with \textit{python setup.py build \&\& python setup.py install}.
 \item [Secure Shell (SSH),]  is a cryptographic (encrypted) network protocol to allow remote login and other network services to operate securely over an insecure network. 
 \item [Unicode,] is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems.]
 \item [UCS-2 \& UCS-4, ] are Unicode encodings which encode each code point to exactly one unit of, respectively, 16 and 32 bits. 
 \item [Wrapper,]  function (or class) is a subroutine in a software library or a computer program whose main purpose is to call a second subroutine or a system call with little or no additional computation. 
 
-
-
-\item[Framework,] is often a layered structure indicating what kind of programs can or should be built and how they would interrelate. Some include actual programs, specify API's, or offer programming tools for using the them.
-
-\item [.bashrc,] is a shell script that Bash runs whenever it is started interactively (when login into MN3 for example).
 \end{description}
-
-
-
-\chapter{Documentation}
-\label{sec:docs}
-
-\begin{itemize}[label={-},labelindent=*,leftmargin=*]
-\item \textbf{pyProCT}
-\begin{description}[labelindent=10pt,leftmargin=30pt]
-\item [Github Readme,] \hfill \\ https://github.com/victor-gil-sepulveda/pyProCT
-\item [Dropbox Supporting Information,] \hfill \\ https://dl.dropboxusercontent.com/u/58918851/pyProCT-SupportingInformation.pdf
-\end{description}
-\item \textbf{pyScheduler}
-\begin{description}[labelindent=10pt,leftmargin=30pt]
-\item [Github Readme,] \hfill \\
-https://github.com/victor-gil-sepulveda/pyScheduler
-\item [Python Package Index (pypi),] \hfill \\
-https://pypi.python.org/pypi/pyScheduler
-\end{description}
-\item \textbf{MareNotrum III}
-\begin{description}[labelindent=10pt,leftmargin=30pt]
-\item [User's guide,] \hfill \\ http://www.bsc.es/support/MareNostrum3-ug.pdf
-\end{description}
-\item \textbf{COMPSs} \label{subsec:compss_doc}
-\begin{description}[labelindent=10pt,leftmargin=30pt]
-\item [User Guide,] \hfill \\
-http://compss.bsc.es/releases/compss/latest/docs/compss-manual.pdf?tracked=true
-\item [Tutorials,] \hfill \\
-http://compss.bsc.es/releases/tutorials/?tracked=true
-\item [IDE User Guide,] \hfill \\
-http://compss.bsc.es/releases/ide/doc/1.2/COMPSs\_IDE\_user\_guide\_v1.2.pdf?tracked=true
-\item [Installation,] \hfill \\
-http://compss.bsc.es/releases/compss/latest/docs/installation-guide.html?tracked=true
-\item [Release Notes,] \hfill \\
-http://compss.bsc.es/releases/compss/latest/docs/RELEASE\_NOTES?tracked=true
-\end{description}
-\item \textbf{Performance Tools}
-\begin{description}[labelindent=10pt,leftmargin=30pt]
-\item [Extrae User Guide,] \hfill \\ http://www.bsc.es/sites/default/files/public/computer\_science/performance\_tools/extrae-3.1.0-user-guide.pdf
-\item [ClusteringSuite intro,] \hfill \\
-http://www.bsc.es/ssl/apps/performanceTools/files/docs/T2\_Clustering.pdf
-\item [ClusteringSuite manual,] \hfill \\
-http://www.bsc.es/sites/default/files/public/computer\_science/performance\_tools/clusteringsuite\_manual.pdf
-\item [Paraver introduction,] \hfill \\
-http://www.bsc.es/sites/default/files/public/computer\_science/performance\_tools/w1\_introtools.pdf
-\item [Paraver internals and details,] \hfill \\
-http://www.bsc.es/ssl/apps/performanceTools/files/docs/W2\_Paraver\_details.pdf
-\item [Instrumentation,] \hfill \\
-http://www.bsc.es/ssl/apps/performanceTools/files/docs/2A\_Instrumentation.pdf
-\item [Tools scalability,] \hfill \\
-http://www.bsc.es/ssl/apps/performanceTools/files/docs/T1\_Scalability.pdf
-\end{description}
-\end{itemize}
-
-

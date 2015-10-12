@@ -1,21 +1,17 @@
 \chapter{Results}
 
 
-This section describes the results of the refactor described in the previous section. 
+This section describes the results of refactoring pyProCT with pyCOMPSs. I divided into three subsections. The first one reports the benefits of using pyCOMPSs programming model. The second subsection contains the performance analysis of the results. Finally, the last part deals with tools that the framework offers.
 
 \section{Programming Model}
 
-COMPSs programming model aims to ease the development and execution of applications. In this section I will evaluate these goals.
-
-First I will talk about the code refactor. As stated in \ref{subsec:pycompss} pyCOMPSs I tried to reduce the code to keep it simple. COMPSs is designed for people without parallelization knowledge, and thus, for sequential programs. I wanted to exploit the simplicity of COMPSs. In order to do it I emulated the process of writing the code directly for pyCOMPSs from a sequential program. This is the scenario I will first analyze.
-
-When talking about the complexity of a program one the first questions is about the code's size. Figure \ref{tab:sizes} shows the comparison between the duplicated classes (the ones used on the original schedulers and the modified versions used when pyCOMPSs scheduler is selected). I compare number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
+pyCOMPSs framework is supposed to require little extra code to be used so first I will compare difference of size between each version. Figure \ref{tab:sizes} shows the comparison between the different classes required. Most of them are equal for the sequential, MPI and multiprocessing schedulers so they are grouped by the name \textit{original}. However MPI requires changes to some classes so they have a column of their own whenever they differ from the sequential and parallel versions. It's based on the number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
 
 
 \begin{center}
 	\begin{tabular}{| R{6cm} | L{3cm} | L{3cm} |}
 		\hline
-		Class Name & Original & pyCOMPSs \\ 
+		Class Name & Original & MPI & pyCOMPSs \\ 
 		\hline
 		\hline
 		Driver & 169 / 8180  &  165 / 7911 \\
@@ -32,10 +28,9 @@ When talking about the complexity of a program one the first questions is about 
 \end{center}
 
 
-Python is a language designed to be easy to read with strong coding conventions so I did not try to minimize the code. I coded in a normal fashion trying to make things clear. Bearing this in mind we see that the refactor did not add too much space. The driver and protocol classes are in fact shorter. This is caused because of the removal of the task-adding loop and the pyScheduler initialization. Postprocessing driver is longer due to the fact that on the original version this section is not parallel. The other ones are quite even.
+We see that the refactor did not add too much space. The driver and protocol classes are in fact shorter. This is caused because of the removal of the task-adding loop and the pyScheduler initialization. Postprocessing driver is longer due to the fact that on the original version this section is not parallel. The other ones are quite even.
 
-pyCOMPSs framework just uses python decorators and API calls so, why do we observe a size increase in some classes? This is due to the fact that our data can not automatically serialized by python's pickle. Almost all the extra size is linked to the work needed to handle the matrix data. However, other than adding this little size overhead, the code is much cleaner and easy to read. 
-
+PyCOMPSs framework just uses python decorators and API calls so, why do we observe a size increase in some classes? This is due to the fact that our data can not automatically serialized by python's pickle. Almost all the extra size is linked to the work needed to handle the matrix data. However, other than adding this little size overhead, the code is much clean and easy to read. 
 
 Another important aspect is the execution process and tools offered by the framework. It is here were COMPSs truly shines. 
 
@@ -43,9 +38,11 @@ The level of hardware abstraction provided by the framework is really good. To e
 
 With this simple two files we can define a wide range of available resources to be used and then select which ones we want to use for an specific execution. Thanks to this we can use a lot of different resources without worrying about the internals and communications. COMPSs' already implements all the connectors required to use them so we just need to give a description of them, select which to use and decorate our code. 
 
-For MareNostrum III executions this process is even easier. The development team has created an script to specifically submit jobs to the supercomputer. By default, it requires the same parameters as a normal execution. However, it has a wide range of easy-to-use options with a clear description. With all the parameters available, such as the network and file system to be used or the number of nodes, it automatically creates the \textit{resources.xml} and \textit{project.xml} that best suit our needs. 
+For MareNostrum III executions this process is even easier. The development team has created scripts to submit jobs to the supercomputer. By default, it requires the same parameters as a normal execution. However, it has a wide range of easy-to-use options with a clear description. With all the parameters available, such as the network and file system to be used or the number of nodes, it automatically creates the \textit{resources.xml} and \textit{project.xml} that best suit our needs. 
 
-This is tools are really useful. Most of the work time working of this project has been spent on trying to execute the program on the supercomputer. One needs to understand how a submission queue system works, which parameters need to be specified, how the class paths are read and used, which way the supercomputer access files, which kind of problems may arise from mutex access to the datasets and so on. This is a quite daunting task for someone without advanced knowledge on the subject or with no one to ask help to. As stated, COMPSs required number of parameters are far less. Understanding some of the aforementioned things will help the user to better use the framework but they are not really mandatory because the COMPSs manuals are good and clear. Following the examples is enough to execute your own programs. 
+This is tools are really useful. Most of the time working of this project has been spent on trying to execute the program on the supercomputer. One needs to understand how a submission queue system works, which parameters need to be specified, how the class paths are read and used, which way the supercomputer access files, which kind of problems may arise from mutex access to the datasets and so on. This is a quite daunting task for someone without advanced knowledge on the subject or with no one to ask help to. 
+
+As stated, COMPSs required number of parameters are far less. Understanding some of the aforementioned things will help the user to better use the framework but they are not really mandatory because the COMPSs manuals are good and clear. Following the examples is enough to execute your own programs. 
 
 
 
@@ -55,8 +52,11 @@ This is tools are really useful. Most of the work time working of this project h
 
 COMPSs is designed to harness all the power of supercomputers and use all the available computing resources. The whole initialization of such a framework is not a trivial matter and because of that I expect it to be slow with respect to MPI or OpenMP. However, being designed to run programs with humongous datasets and computation times, this initial overhead is negligible. I expect to see that MPI and multiprocessing schedulers are faster than pyCOMPSs on small datasets and slower on larger ones. 
 
+The performance has been measured with three datasets:
+
+\begin{itemize}
+\item [Small []]
+\end{itemize}
 
 
-
-
-\section{Miscellaneous}
+\section{Tools}

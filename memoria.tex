@@ -7,12 +7,12 @@
 
 \begin{document}
 
-\title{\LARGE { \vspace*{25mm} \bf pyProCT Optimization}\\
+\title{\LARGE { \vspace*{25mm} \bf Optimization of the cluster analysis tool pyProCT with pyCOMPSs}\\
  \vspace*{6mm}
 }
 
 \author{Pol Alvarez}
-\submitdate{22/02/2015}
+\submitdate{15/10/2015}
 
 \normallinespacing
 \maketitle
@@ -20,25 +20,35 @@
 
 \body
 
-\input{introduction}
-\chapter{Methodology}
-\label{chap:method}
-\input{pyproct}
-\input{COMPSs}
-\input{tictactoe}
-\input{regression}
-\input{refactor}
+\input{acknowledgements}
+\input{intro}
+\input{objectives}
+\input{methodology}
 \input{results}
 \input{conclusion}
 \input{glossary}
-\input{temporal_planning}
-\input{budget}
-\input{sustainability}
+
+\input{references}
+\addtocounter{chapter}{1}
+\addcontentsline{toc}{chapter}{\arabic{chapter} List of Figures}
+\listoffigures 
+\addtocounter{chapter}{1}
+\addcontentsline{toc}{chapter}{\arabic{chapter} List of Tables}
+\listoftables
+
+\input{appendices}
+
 
 
 \bibliographystyle{plain}
-\addcontentsline{toc}{section}{References}
-%s\bibliography{TFG.bib}
-\bibliography{web_ff.bib}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{TFG.bib,web_ff.bib,manual.bib}
+
+
+%\input{introduction}
+
+%\input{temporal_planning}
+
+
 
 \end{document}

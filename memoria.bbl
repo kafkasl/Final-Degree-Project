@@ -1,7 +1,123 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Adler2015}
+Amir Adler, Michael Elad, and Yacov Hel-Or.
+\newblock {Linear-Time Subspace Clustering via Bipartite Graph Modeling}.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  pages 1--1, 2015.
+
+\bibitem{Armbrust2010}
+Michael Armbrust, Ion Stoica, Matei Zaharia, Armando Fox, Rean Griffith,
+  Anthony~D. Joseph, Randy Katz, Andy Konwinski, Gunho Lee, David Patterson,
+  and Ariel Rabkin.
+\newblock {A view of cloud computing}.
+\newblock {\em Communications of the ACM}, 53(4):50, April 2010.
+
+\bibitem{Ayech2015}
+Mohamed~Walid Ayech and Djemel Ziou.
+\newblock {Segmentation of Terahertz imaging using k-means clustering based on
+  ranked set sampling}.
+\newblock {\em Expert Systems with Applications}, 42(6):2959--2974, April 2015.
+
+\bibitem{Badia2003}
+R.~M. Badia, J.~Labarta, R.~Sirvent, J.~M. Perez, J.~M. Cela, and R.~Grima.
+\newblock {Programming Grid Applications with GRID superscalar}.
+\newblock {\em Journal of Grid Computing}, 1(2):151--170, 2003.
+
+\bibitem{Burca2014}
+Ana~Maria Burca and Ghiorghe Batr\^{\i}nca.
+\newblock {Application of cluster and discriminant analysis on romanian
+  insurance market}.
+\newblock In {\em Vision 2020: Sustainable Growth, Economic Development, and
+  Global Competitiveness - Proceedings of the 23rd International Business
+  Information Management Association Conference, IBIMA 2014}, volume~1, pages
+  817--824. International Business Information Management Association, IBIMA,
+  2014.
+
+\bibitem{Chan2014}
+Julia Y.~K. Chan and Christopher~F. Bauer.
+\newblock {Identifying At-Risk Students in General Chemistry via Cluster
+  Analysis of Affective Characteristics}.
+\newblock {\em Journal of Chemical Education}, 91(9):1417--1425, September
+  2014.
+
+\bibitem{Cortes2007}
+Joaqu\'{\i}n~A. Cort\'{e}s, Jos\'{e}~Luis Palma, and Marjorie Wilson.
+\newblock {Deciphering magma mixing: The application of cluster analysis to the
+  mineral chemistry of crystal populations}.
+\newblock {\em Journal of Volcanology and Geothermal Research},
+  165(3-4):163--188, September 2007.
+
+\bibitem{Dalcin2008}
+Lisandro Dalc\'{\i}n, Rodrigo Paz, Mario Storti, and Jorge D’El\'{\i}a.
+\newblock {MPI for Python: Performance improvements and MPI-2 extensions}.
+\newblock {\em Journal of Parallel and Distributed Computing}, 68(5):655--662,
+  May 2008.
+
+\bibitem{Foster2008}
+Ian Foster, Yong Zhao, Ioan Raicu, and Shiyong Lu.
+\newblock {Cloud Computing and Grid Computing 360-Degree Compared}.
+\newblock In {\em 2008 Grid Computing Environments Workshop}, pages 1--10.
+  IEEE, November 2008.
+
+\bibitem{Gil2014}
+V\'{\i}ctor~A. Gil and V\'{\i}ctor Guallar.
+\newblock {pyProCT: Automated Cluster Analysis for Structural Bioinformatics}.
+\newblock {\em Journal of Chemical Theory and Computation}, 10(8):3236--3243,
+  August 2014.
+
+\bibitem{Kupski2015}
+L.~Kupski and E.~Badiale-Furlong.
+\newblock {Principal components analysis: An innovative approach to establish
+  interferences in ochratoxin A detection}.
+\newblock {\em Food Chemistry}, 177:354--360, June 2015.
+
+\bibitem{Laney}
+Douglas Laney.
+\newblock {\em {The Importance of 'Big Data': A Definition}}.
+\newblock Gartner.
+
+\bibitem{lezzi2012enabling}
+Daniele Lezzi, Roger Rafanell, Abel Carri{\'o}n, Ignacio~Blanquer Espert,
+  Vicente Hern{\'a}ndez, and Rosa~M Badia.
+\newblock Enabling e-science applications on the cloud with compss.
+\newblock In {\em Euro-Par 2011: Parallel Processing Workshops}, pages 25--34.
+  Springer, 2012.
+
+\bibitem{Lordan2013}
+Francesc Lordan, Enric Tejedor, Jorge Ejarque, Roger Rafanell, Javier
+  \'{A}lvarez, Fabrizio Marozzo, Daniele Lezzi, Ra\"{u}l Sirvent, Domenico
+  Talia, and Rosa~M. Badia.
+\newblock {ServiceSs: An Interoperable Programming Framework for the Cloud}.
+\newblock {\em Journal of Grid Computing}, 12(1):67--91, 2013.
+
+\bibitem{Muller2014}
+Henriette M\"{u}ller and Ulrich Hamm.
+\newblock {Stability of market segmentation with cluster analysis – A
+  methodological approach}.
+\newblock {\em Food Quality and Preference}, 34:70--78, June 2014.
+
+\bibitem{Nayak2015}
+S.~Nayak, C.~Panda, Z.~Xalxo, and H.~S. Behera.
+\newblock {\em {Computational Intelligence in Data Mining - Volume 2}},
+  volume~32 of {\em Smart Innovation, Systems and Technologies}.
+\newblock Springer India, New Delhi, 2015.
+
+\bibitem{Tejedor2015}
+E.~Tejedor, Y.~Becerra, G.~Alomar, A.~Queralt, R.~M. Badia, J.~Torres,
+  T.~Cortes, and J.~Labarta.
+\newblock {PyCOMPSs: Parallel computational workflows in Python}.
+\newblock {\em International Journal of High Performance Computing
+  Applications}, August 2015.
 
 \bibitem{vanderplas_why_2014}
 Jake Vanderplas.
 \newblock Why {Python} is {Slow}: {Looking} {Under} the {Hood}, May 2014.
+
+\bibitem{Pillet1991}
+Departament D'arquitectura De~Computadors {Vincent Pillet, Vincent Pillet,
+  Jes\'{u}s Labarta, Toni Cortes, Toni Cortes, Sergi Girona, Sergi Girona}.
+\newblock {PARAVER: A Tool to Visualize and Analyze Parallel Code}.
+\newblock {\em In WoTUG-18}, 1991.
 
 \end{thebibliography}

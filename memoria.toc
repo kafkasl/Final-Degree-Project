@@ -1,65 +1,47 @@
-\select@language {english}
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Problem Justification}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Scope}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}Methodology}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Limitations and Risks}{7}{section.1.5}
-\contentsline {section}{\numberline {1.6}Context}{8}{section.1.6}
-\contentsline {section}{\numberline {1.7}Stakeholders}{11}{section.1.7}
-\contentsline {section}{\numberline {1.8}State of the Art}{12}{section.1.8}
-\contentsline {section}{\numberline {1.9}Document Structure and Notes}{12}{section.1.9}
-\contentsline {chapter}{\numberline {2}Methodology}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Software design description: pyProCT}{15}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Algorithms}{16}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Execution Flow}{16}{subsection.2.1.2}
-\contentsline {subsubsection}{Global}{17}{section*.2}
-\contentsline {subsubsection}{Data}{20}{section*.5}
-\contentsline {subsubsection}{Clustering}{23}{section*.7}
-\contentsline {subsubsection}{Postprocess}{27}{section*.9}
-\contentsline {section}{\numberline {2.2}Code exploration and tools research}{30}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Motivation}{30}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Test program description}{30}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}pyScheduler refactor}{31}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Instrumenting with Extrae}{32}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Visualizing with Paraver}{37}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Validation method: pyProCT-regression}{38}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Basic tests and issues}{40}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Refactor}{41}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Set up}{42}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}pyCOMPSs}{43}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Other issues}{46}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Results}{48}{chapter.3}
-\contentsline {section}{\numberline {3.1}Performance}{48}{section.3.1}
-\contentsline {section}{\numberline {3.2}Programming Model}{48}{section.3.2}
-\contentsline {section}{\numberline {3.3}Miscellaneous}{49}{section.3.3}
-\contentsline {chapter}{\numberline {4}Conclusions}{50}{chapter.4}
-\contentsline {chapter}{\numberline {5}Glossary}{51}{chapter.5}
-\contentsline {chapter}{\numberline {6}Documentation}{54}{chapter.6}
-\contentsline {chapter}{\numberline {7}Temporal Planning}{56}{chapter.7}
-\contentsline {section}{\numberline {7.1}Overview}{56}{section.7.1}
-\contentsline {section}{\numberline {7.2}Task List}{56}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tasks Description}{57}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Project Management}{57}{subsection.7.3.1}
-\contentsline {subsubsection}{Resources list}{57}{section*.15}
-\contentsline {subsection}{\numberline {7.3.2}Software design description}{58}{subsection.7.3.2}
-\contentsline {subsubsection}{Resources list}{58}{section*.16}
-\contentsline {subsection}{\numberline {7.3.3}Analysis tools' research}{59}{subsection.7.3.3}
-\contentsline {subsubsection}{Resources list}{59}{section*.17}
-\contentsline {subsection}{\numberline {7.3.4}Common set up for all SCRUM cycles}{59}{subsection.7.3.4}
-\contentsline {subsubsection}{Resources list}{60}{section*.18}
-\contentsline {subsection}{\numberline {7.3.5}SCRUM iterations}{60}{subsection.7.3.5}
-\contentsline {subsubsection}{Resources list}{60}{section*.19}
-\contentsline {subsection}{\numberline {7.3.6}Global performance analysis}{61}{subsection.7.3.6}
-\contentsline {subsubsection}{Resources list}{61}{section*.20}
-\contentsline {section}{\numberline {7.4}Gantt and PERT charts}{61}{section.7.4}
-\contentsline {chapter}{\numberline {8}Budget}{62}{chapter.8}
-\contentsline {section}{\numberline {8.1}Human Resources}{62}{section.8.1}
-\contentsline {section}{\numberline {8.2}Hardware Resources}{63}{section.8.2}
-\contentsline {section}{\numberline {8.3}Software Resources}{64}{section.8.3}
-\contentsline {section}{\numberline {8.4}Total Budget}{65}{section.8.4}
-\contentsline {chapter}{\numberline {9}Sustainability}{67}{chapter.9}
-\contentsline {section}{\numberline {9.1}Economic}{67}{section.9.1}
-\contentsline {section}{\numberline {9.2}Social}{68}{section.9.2}
-\contentsline {section}{\numberline {9.3}Environmental}{68}{section.9.3}
-\contentsline {section}{References}{69}{section.9.3}
+\contentsline {section}{\numberline {1.1}Clustering}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}pyProCT}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}pyCOMPSs}{7}{section.1.3}
+\contentsline {chapter}{\numberline {2}Objectives}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Understand pyProCT}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Refactor pyProCT with pyCOMPSs}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Validate the results}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Analysis of pyProCT}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Algorithms}{10}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Execution Flow}{11}{subsection.3.1.2}
+\contentsline {subsubsection}{Global}{11}{section*.2}
+\contentsline {subsubsection}{Data}{14}{section*.5}
+\contentsline {subsubsection}{Clustering}{17}{section*.7}
+\contentsline {subsubsection}{Postprocess}{21}{section*.9}
+\contentsline {section}{\numberline {3.2}Refactoring with pyCOMPSs}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Set up}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}pyCOMPSs}{25}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Validation tool: pyProCT-regression}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Basic tests and issues}{30}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Results}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Programming Model}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Performance}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Tools}{33}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{34}{chapter.5}
+\contentsline {chapter}{\numberline {6}Glossary}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}List of References}{38}{chapter.7}
+\contentsline {chapter}{8 List of Figures}{39}{chapter.7}
+\contentsline {chapter}{9 List of Tables}{40}{chapter*.11}
+\contentsline {chapter}{\numberline {10}Appendices}{42}{chapter.10}
+\contentsline {section}{\numberline {10.1}Performance Tools Research}{42}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Motivation}{42}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Test program description}{42}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}pyScheduler refactor}{43}{subsection.10.1.3}
+\contentsline {subsection}{\numberline {10.1.4}Instrumenting with Extrae}{45}{subsection.10.1.4}
+\contentsline {subsection}{\numberline {10.1.5}Visualizing with Paraver}{49}{subsection.10.1.5}
+\contentsline {section}{\numberline {10.2}Work Methodology}{50}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Limitations and Risks}{52}{subsection.10.2.1}
+\contentsline {section}{\numberline {10.3}Budget}{53}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Human Resources}{54}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Hardware Resources}{55}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Software Resources}{55}{subsection.10.3.3}
+\contentsline {subsection}{\numberline {10.3.4}Total Budget}{56}{subsection.10.3.4}
+\contentsline {section}{\numberline {10.4}Problems}{57}{section.10.4}
+\contentsline {chapter}{Bibliography}{58}{section.10.4}

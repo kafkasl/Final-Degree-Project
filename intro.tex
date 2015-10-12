@@ -1,0 +1,85 @@
+\chapter{Introduction}
+
+Nowadays the amount of available digital information is exponentially increasing. Just on 2015 we generated almost 8.000 exabytes of information. Facebook generates 105 terabytes of data each half hour, more than 48 hours of video per minute are uploaded to youtube and google has at least 1 million queries/minute. But why do we observe this massive increase? To start the cost of creating, managing and storing information has dramatically dropped: EMC Corporation estimates that on 2011 this cost has been cut to a 1/6 of what it was on 2005. But more importantly people is more connected than it has ever been; mobiles, websites and social channels are just some examples of a whole new world of data-generating people interactions. 
+
+In this scenario is where we found the hot topic of today: Big Data. So what is it?, usually the term is used referring to data sets too big or complex to be processed with traditional data applications or on-hand management tools. According to the IT giant Gartner, Inc Big Data can be characterized by the "3 Vs", velocity, volume and variety \cite{Laney}:
+
+\begin{quotation}
+"Big data" is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.
+\end{quotation}
+
+
+However all this raw information needs to be processed and categorized in an effective way before being used. Cluster analysis methods are one of the most used tools to address this issue. 
+
+\section{Clustering}
+
+The term \textbf{cluster analysis} (first used by Trion, 1939) refers to the task of sorting similar objects of a data set into groups (called clusters) in a way that the degree of similarity between each pair is maximal if they belong to the same cluster and minimal otherwise. Data sets can be imagined as points in a multidimensional space, where each feature of an object would represent a dimension. The CA methods need to identify, as efficiently as possible, the denser areas and group them into clusters.
+
+Thanks to the clustering we can reduce the size of large data sets by extracting the most relevant information, usually the common features of a group or a subset of representatives. Cluster analysis (CA from now onwards) techniques thrive in the Big Data world because it's not feasible to manually label objects, there is no prior knowledge of the number and nature of the clusters and, also, their identifying traits may change over time. 
+
+It is important to note that cluster analysis it's not an specific algorithm but rather the general task to perform. Due to the fact that the similarity criteria it's subjective and can change a lot between data sets, there isn't an optimal clustering algorithm. This is the reason why there are so many  clustering algorithms, each with it's advantages and inconveniences. Each algorithm uses it's own kind of cluster model that defines how the algorithm groups the items and defines the clusters. Some of the most relevant examples are:
+\label{subsec:algorithm_kinds}
+\begin{description}
+\item [Hierarchical Clustering Analysis (HCA)] \hfill \\ 
+These methods seek, as their name indicates, to build a hierarchy of clusters. These can be done by starting with all elements in one clusters and the divide them in a "top down" way. This method is called \textbf{Divisive}. Opposed to this one, we find the \textbf{Agglomerative} method, where each data point starts in a different cluster merging them as one moves up the hierarchy.
+\item [Centroid Clustering,] \hfill \\ 
+On these algorithms the similarity between different clusters is defined as the similarity between their centroids. \textbf{K-means} clustering is one of such methods. On it, each observation belongs to the nearest centroid which, in turn, serves as the representative or prototype of the cluster.
+\item [Distribution-based Clustering] \hfill \\ 
+Clusters are modelled by statistical distributions. On this category falls the well-known \textbf{expectation-maximization (EM) algorithm} which uses multivariate normal distributions.
+\item [Density Clustering,] \hfill \\ 
+These methods follow the intuitive notion, described earlier, of considering the observations as clouds of points in a multidimensional space and so, they identify clusters as connected dense regions in the data space. \textbf{DBSCAN} is one of such algorithms and it's one of the most common and cited in scientific literature. 
+\end{description}
+
+
+It is also possible to classify clustering methods by some other properties such as:
+
+\begin{description}
+\item [Hard Clustering,] \hfill \\ where each element belongs to a cluster or not.
+\item [Soft Clustering,] \hfill \\ where each element has likelihood of belonging to a certain cluster.
+\end{description}
+
+
+Cluster analysis methods can be applied to a wide range of subjects. Basically it can be used in any context where finding groups in sets of data is useful, for example:
+
+\begin{description}
+\item [Image segmentation,] \hfill \\ dividing an image into clusters or regions enhances a number of computer vision methods. Some examples are border detection or object recognition. \cite{Ayech2015}
+\item [Market analysis,] \hfill \\ grouping enterprises \cite{Burca2014} or consumers \cite{Muller2014} to perform better market analysis or customize ads for each kind of consumer.
+\item [Education tracking,] \hfill \\ grouping students to keep track of their record and apply more custom techniques to each student needs. \cite{Chan2014}
+\item [Mathematical chemistry,] \hfill \\ to analyse, group and find structural similarities in chemistry compounds, minerals, and any kind of material for which a chemical analysis is convenient. \cite{Cortes2007}
+\end{description}
+
+
+Most of the clustering analysis methods are not new. However with the dramatical increase in data size mentioned earlier, researchers have focused on improving their performance as much as possible. From this need arise new, but more rough, methods such as \textbf{canopy clustering} \cite{Nayak2015} which can process huge amounts of information by pre-partitioning data to then analyse smaller partitions with slower methods.
+
+%TODO add here the supercomputers section as method for improving CT as well as mpi4py
+
+The increasing amount of information each data point contains it's also a problem for some algorithms. This information leads to high-dimensional data which, in turn, causes problems to a big part of the modern algorithms. This is known as the curse of dimensionality, which basically points out the fact that high-dimensional data often becomes sparse due to the large volume of space. It is important to note that this problem is not due to data itself but to the algorithm used. Some modern approaches try to overcome this difficulty by reducing the data-dimensionality. Methods such as \textbf{principal component analysis} \cite{Kupski2015} use just some part of it. \textbf{Subspace clustering} \cite{Adler2015} is an example of them. It has adopted ideas from density-based algorithms.
+
+Another way to boost clustering tools performance is high performance computing. Supercomputers provide an amount of computing power that no traditional computer can offer. They allow to extremely reduce execution times or handle applications which require humongous amounts of memory. Cloud computing further enhances the utility of HPC machines. For example, grid systems have a good synergy with the cloud: using virtualization to create OS instances adds features like self-service resource provisioning, scalability or elasticity to grids' raw computing power.\cite{Armbrust2010}\cite{Foster2008}
+
+
+
+\section{pyProCT}
+
+The correct usage of clustering analysis methods is not easy: right algorithm selection, better parameters estimation or appropriate result analysis are just some of the problems that CA tools user faces. However, we also showed that CA is present in a lot of different subjects and is used, or would be useful, to people with  limited knowledge both on algorithmic methods and statistics. On the other way around we also find that CA specialists may not be able to correctly assess the results of a clustering due to the nature of the data itself.
+
+Python Protein Clustering Tool \cite{Gil2014} (pyProCT from here onwards) focus is to deal with the aforementioned problems . It provides an improved clustering performance through the initial definition of an hypothesis or goal. This way, through a more "semantic" approach users can "guide" pyProCT without forcing them to deeply understand the pros and cons each method w.r.t to an specific kind of data.
+
+First it computes the distance's matrix of each pair of elements; then it uses a number of different cluster analysis algorithms on the dataset trying to estimate the best parameters for each one, and, finally, it rates the performance of each method and parametrization with a common scoring function.
+
+The programming language used for this tool is Python. Its use in big data applications has increased dramatically over the last years due to the big number of available scientific libraries and its easy usage. However, python still lacks easy solutions for distributed systems. Most of the available parallelization methods rely on the use of message-passing interfaces (MPI) or are best suited for embarrassingly parallel computations. Currently pyProCT's scheduler uses two of them: mpi4py \cite{Dalcin2008} and python's multiprocessing module.
+
+pyProCT could greatly benefit from HPC. Because of that, we want to refactor the software with a python framework designed for supercomputing systems: pyCOMPSs.
+
+
+\section{pyCOMPSs}
+
+
+PyCOMPSs \cite{Tejedor2015} is a framework that facilitates the development of parallel computational workflows in Python. This framework provides a sequential programming model to achieve a parallel and optimized execution pipeline. This differs from other models and paradigms which require the developer to have a deep knowledge of the hardware executing the code such as MPI interfaces and OpenMP C pragmas amongst others. The user just needs to decorate the functions to be run as asynchronous parallel tasks. 
+
+It is based on the java framework COMPSs \cite{Lordan2013}. Its runtime deals with the data dependencies of the defined tasks and assigns them to the available resources in order to achieve the best execution pipeline. This runtime was originally created for GRID superscalar \cite{Badia2003} from which COMPSs evolved. At the present time COMPSs team is working on a brand new release (1.3). The first stable version (1.2) added to GRID superscalar new features like cloud computing, better hardware abstraction and python and C++ APIs. The 1.3 release under development introduces new communication adaptors, which will further increase its performance, an easier usage and more options for the APIs. 
+
+COMPSs is infrastructure unaware making the code portable. Thanks to its set of pluggable connectors it can work with a wide range of infrastructures, such as clouds\cite{lezzi2012enabling} and grids, while providing an uniform interface for the user. This increases its scalability and allows elasticity of resources.
+
+The framework offers two interesting tools for execution analysis: the monitor and the tracing system. The monitoring offers online information of an execution such as diagrams of data dependencies, resources state details, statistics and easy access to the framework logs.The tracing tool generates trace files which allow users to analyse the performance with the graphical tool paraver \cite{Pillet1991}.
+

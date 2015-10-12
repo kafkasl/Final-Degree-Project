@@ -1,0 +1,18 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Global Section Execution Flow\relax }}{12}{figure.caption.3}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Global Section Execution Flow\relax }}{13}{figure.caption.4}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Data Section Execution Flow\relax }}{16}{figure.caption.6}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Clustering Section Execution Flow\relax }}{19}{figure.caption.8}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Postprocess Section Execution Flow\relax }}{22}{figure.caption.10}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{48}{figure.caption.13}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{50}{figure.caption.14}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{51}{figure.caption.15}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{52}{figure.caption.16}

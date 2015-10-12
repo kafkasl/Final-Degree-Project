@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  4 OCT 2015 17:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.12)  12 OCT 2015 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **memoria.tex
 (./memoria.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -28,68 +28,10 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \openout2 = `thesis.preamble.aux'.
 
 (./thesis.preamble.tex
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
-))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks15
-\verbatim@line=\toks16
-\verbatim@in@stream=\read1
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
-Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
-\symlasy=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) (./mathchars.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks17
-\symAMSa=\mathgroup5
-\symAMSb=\mathgroup6
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -310,6 +252,64 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+) (./mathchars.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip43
@@ -521,6 +521,16 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/01/29 v5.0m Spanish support from the babel system
+\es@datefmt=\count113
+\es@quottoks=\toks23
+\es@quotdepth=\count114
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
@@ -530,7 +540,7 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen127
 \extrarowheight=\dimen128
-\NC@list=\toks23
+\NC@list=\toks24
 \extratabsurround=\skip45
 \backup@length=\skip46
 )
@@ -546,16 +556,21 @@ Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
-) (./blocked.sty)
+)
+   defining Unicode char U+0301 (decimal 769)
+ (./blocked.sty)
 (./uhead.sty) (./boxit.sty) (./icthesis.sty)
-\c@definition=\count113
-\c@theorem=\count114
+\c@definition=\count115
+\c@theorem=\count116
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./memoria.aux)
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+ (./memoria.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+)
 \openout1 = `memoria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -575,17 +590,17 @@ LaTeX Font Info:    ... okay on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
+\scratchcounter=\count117
 \scratchdimen=\dimen130
 \scratchbox=\box29
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count118
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count120
 \MPscratchDim=\dimen131
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -610,7 +625,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count121
+\c@section@level=\count123
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -657,8 +672,10 @@ LaTeX Info: Redefining \nameref on input line 8.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 
-Overfull \vbox (54.30733pt too high) detected at line 18
+Overfull \vbox (103.10509pt too high) detected at line 18
  []
 
 [1
@@ -666,6 +683,8 @@ Overfull \vbox (54.30733pt too high) detected at line 18
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./memoria.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
@@ -682,427 +701,491 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
-] [3])
+]
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+ [3])
 \tf@toc=\write4
 \openout4 = `memoria.toc'.
 
 
-(./introduction.texpdfTeX warning (ext4): destination with the same identifier 
-(name{page.1}) has been already used, duplicate ignored
+(./acknowledgements.tex) (./intro.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
             {Introduction} [1]
-Chapter 1.
+Cap\'{\i }tulo 1.
 
-Overfull \hbox (1.94281pt too wide) in paragraph at lines 9--10
-[]\T1/cmr/m/n/12 COMPSs pro-vides a good par-al-lel ex-e-cu-tion whilst al-low-
-ing the de-vel-oper to code in a sequential-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4391) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 \item \textbf
-                  {Refactor pyProCT} with COMP superscalar for python \footn...
-[2
+l.17 
+      [2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \item \textbf
-                  {Optimization's analysis}. Finally we will analyse, compar...
-[3] [4] [5] [6] [7]
-
-LaTeX Warning: Citation `Laney' on page 8 undefined on input line 88.
-
-[8] [9]
-
-LaTeX Warning: Citation `Ayech2015' on page 10 undefined on input line 128.
-
-
-LaTeX Warning: Citation `Burca2014' on page 10 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Muller2014' on page 10 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Chan2014' on page 10 undefined on input line 130.
-
-[10]
-
-LaTeX Warning: Citation `Cortes2007' on page 11 undefined on input line 131.
-
-
-LaTeX Warning: Citation `Nayak2015' on page 11 undefined on input line 144.
-
-[11]
-
-LaTeX Warning: Citation `Kupski2015' on page 12 undefined on input line 146.
-
-
-LaTeX Warning: Citation `Adler2015' on page 12 undefined on input line 146.
-
-[12] [13]) [14]
-Chapter 2.
-(./pyproct.tex
+l.27 \item [Distribution-based Clustering]
+                                           \hfill \\ [3]
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+ [4]
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+ [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [6])
+(./objectives.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [7]
+Cap\'{\i }tulo 2.
+) (./methodology.tex [8
 
 ]
-[16] <img/global.png, id=393, 895.58118pt x 1351.87411pt>
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [9]
+Cap\'{\i }tulo 3.
+[10
+
+] <img/global.png, id=323, 895.58118pt x 1351.87411pt>
 File: img/global.png Graphic file (type png)
  <use img/global.png>
-Package pdftex.def Info: img/global.png used on input line 49.
+Package pdftex.def Info: img/global.png used on input line 46.
 (pdftex.def)             Requested size: 279.90942pt x 422.52342pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17] [18 <./img/global.png>]
-<img/global_sequence_driver.jpg, id=404, 1279.78125pt x 732.7375pt>
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+[11]
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [12 <./img/global.png>]
+<img/global_sequence_driver.jpg, id=334, 1279.78125pt x 732.7375pt>
 File: img/global_sequence_driver.jpg Graphic file (type jpg)
 
 <use img/global_sequence_driver.jpg>
-Package pdftex.def Info: img/global_sequence_driver.jpg used on input line 59.
+Package pdftex.def Info: img/global_sequence_driver.jpg used on input line 56.
 (pdftex.def)             Requested size: 711.3189pt x 407.26671pt.
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 59--60
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 56--57
 [][] 
  []
 
-[19 <./img/global_sequence_driver.jpg>]
-Overfull \hbox (4.2598pt too wide) in paragraph at lines 92--93
-\T1/cmr/m/n/12 This sec-tion de-fines how the dis-tance ma-trix should be build
-. Es-sen-tially it runs the \T1/cmr/m/it/12 DataDriver\T1/cmr/m/n/12 's
- []
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+[13 <./img/global_sequence_driver.jpg>]
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+ [14
 
-[20
 
-
-] [21] <img/data_sequence_driver.png, id=420, 1925.78294pt x 1303.69412pt>
+]
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+ [15]
+<img/data_sequence_driver.png, id=350, 1925.78294pt x 1303.69412pt>
 File: img/data_sequence_driver.png Graphic file (type png)
 
 <use img/data_sequence_driver.png>
-Package pdftex.def Info: img/data_sequence_driver.png used on input line 98.
+Package pdftex.def Info: img/data_sequence_driver.png used on input line 95.
 (pdftex.def)             Requested size: 682.86613pt x 462.26761pt.
 
 
-LaTeX Warning: Float too large for page by 3.07072pt on input line 100.
+LaTeX Warning: Float too large for page by 3.07072pt on input line 97.
 
-[22 <./img/data_sequence_driver.png>] [23
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+[16 <./img/data_sequence_driver.png>]
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
+ [17
 
 
-] [24]
-<img/clustering_sequence_driver.png, id=439, 2426.0047pt x 1677.79765pt>
+]
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [18]
+<img/clustering_sequence_driver.png, id=369, 2426.0047pt x 1677.79765pt>
 File: img/clustering_sequence_driver.png Graphic file (type png)
 
 <use img/clustering_sequence_driver.png>
 Package pdftex.def Info: img/clustering_sequence_driver.png used on input line 
-154.
+151.
 (pdftex.def)             Requested size: 682.86613pt x 472.26346pt.
 
 
-LaTeX Warning: Float too large for page by 13.06657pt on input line 157.
+LaTeX Warning: Float too large for page by 13.06657pt on input line 154.
 
-[25 <./img/clustering_sequence_driver.png (PNG copy)>] [26
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+[19 <./img/clustering_sequence_driver.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+ [20
 
 
-] [27]
-<img/postprocess_sequence_driver.png, id=457, 2002.30412pt x 1306.52823pt>
+]
+LaTeX Info: Redefining \. on input line 211.
+LaTeX Info: Redefining \% on input line 211.
+ [21]
+<img/postprocess_sequence_driver.png, id=386, 2002.30412pt x 1306.52823pt>
 File: img/postprocess_sequence_driver.png Graphic file (type png)
 
 <use img/postprocess_sequence_driver.png>
 Package pdftex.def Info: img/postprocess_sequence_driver.png used on input line
- 216.
+ 213.
 (pdftex.def)             Requested size: 682.86613pt x 445.58931pt.
- [28 <./img/postprocess_sequence_driver.png>] [29
-
-
-]) (./tictactoe.tex [30]
-Overfull \hbox (2.1123pt too wide) in paragraph at lines 17--18
-[]\T1/cmr/m/n/12 To do this it first gets all the free cells, then for each ava
-il-able one it calls the ex-plo-ration_handler
- []
-
-[31] [32]
-Overfull \hbox (12.54726pt too wide) in paragraph at lines 57--58
-\T1/cmr/m/n/12 ule (im-port pyex-trae) and emit spe-cific events in-side the co
-de with \T1/cmr/m/it/12 pyex-trae.eventandcounters(type,
- []
-
-[33] [34] [35] <img/tic-tac-toe.png, id=503, 2030.6453pt x 1828.00589pt>
-File: img/tic-tac-toe.png Graphic file (type png)
-
-<use img/tic-tac-toe.png>
-Package pdftex.def Info: img/tic-tac-toe.png used on input line 81.
-(pdftex.def)             Requested size: 569.05511pt x 512.25656pt.
-
-
-LaTeX Warning: Float too large for page by 53.05968pt on input line 84.
-
-[36 <./img/tic-tac-toe.png>]
-
-LaTeX Warning: Hyper reference `fig:fig:ttt-python-funcs-seq' on page 37 undefi
-ned on input line 95.
-
-<img/ttt_500_python_funcsG11.png, id=509, 602.25pt x 132.495pt>
-File: img/ttt_500_python_funcsG11.png Graphic file (type png)
-
-<use img/ttt_500_python_funcsG11.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG11.png used on input line 99.
-
-(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
-
-<img/ttt_500_python_funcsG12.png, id=510, 602.25pt x 132.495pt>
-File: img/ttt_500_python_funcsG12.png Graphic file (type png)
-
-<use img/ttt_500_python_funcsG12.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG12.png used on input line 100
-.
-(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
-
-<img/ttt_500_python_funcsG13.png, id=511, 602.25pt x 132.495pt>
-File: img/ttt_500_python_funcsG13.png Graphic file (type png)
-
-<use img/ttt_500_python_funcsG13.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG13.png used on input line 101
-.
-(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 37 undefined on in
-put line 107.
-
-
-LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 37 undefined on in
-put line 107.
-
-
-<img/New_window_1_2DZoom_range_[1,6]@test.png, id=516, 897.3525pt x 349.305pt>
-File: img/New_window_1_2DZoom_range_[1,6]@test.png Graphic file (type png)
-
-<use img/New_window_1_2DZoom_range_[1,6]@test.png>
-Package pdftex.def Info: img/New_window_1_2DZoom_range_[1,6]@test.png used on i
-nput line 111.
-(pdftex.def)             Requested size: 483.69687pt x 188.28076pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/cluster_graph_mpi.png, id=517, 602.25pt x 132.495pt>
-File: img/cluster_graph_mpi.png Graphic file (type png)
-
-<use img/cluster_graph_mpi.png>
-Package pdftex.def Info: img/cluster_graph_mpi.png used on input line 119.
-(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
-
-<img/cluster_mpi_IPC.png, id=518, 642.4pt x 401.5pt>
-File: img/cluster_mpi_IPC.png Graphic file (type png)
-
-<use img/cluster_mpi_IPC.png>
-Package pdftex.def Info: img/cluster_mpi_IPC.png used on input line 120.
-(pdftex.def)             Requested size: 483.69687pt x 302.3189pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./regression.tex
-Underfull \vbox (badness 4954) has occurred while \output is active []
-
- [37
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+ [22 <./img/postprocess_sequence_driver.png>]
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+ [23
 
 
 ]
-Underfull \vbox (badness 4205) has occurred while \output is active []
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+ [24]
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
+ [25]
+Underfull \vbox (badness 1502) has occurred while \output is active []
 
- [38 <./img/ttt_500_python_funcsG11.png> <./img/ttt_500_python_funcsG12.png> <.
-/img/ttt_500_python_funcsG13.png>] [39 <./img/New_window_1_2DZoom_range_[1,6]@t
-est.png (PNG copy)>] [40 <./img/cluster_graph_mpi.png> <./img/cluster_mpi_IPC.p
-ng>])
-(./refactor.tex [41] [42] [43]
-Overfull \hbox (6.14204pt too wide) in paragraph at lines 44--45
-\T1/cmr/m/n/12 se-quen-tial pro-gram we just need to use the \T1/cmr/m/it/12 @t
-ask() \T1/cmr/m/n/12 dec-o-ra-tor and the \T1/cmr/m/it/12 obj = compss_wait_on(
-obj)
- []
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
+ [26]
+LaTeX Info: Redefining \. on input line 317.
+LaTeX Info: Redefining \% on input line 317.
 
-[44] [45]) (./results.tex [46] [47]
-Chapter 3.
+[27]
+LaTeX Info: Redefining \. on input line 332.
+LaTeX Info: Redefining \% on input line 332.
+ [28]
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
+ [29]) (./results.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [30]
+Cap\'{\i }tulo 4.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 33.
+(caption)                particular \caption on input line 26.
 See the caption package documentation for explanation.
 
-
-Underfull \vbox (badness 6575) has occurred while \output is active []
-
- [48
-
-])
-(./conclusion.tex [49]
-Chapter 4.
-) (./glossary.tex [50
+[31
 
 ]
-Chapter 5.
-[51
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [32]) (./conclusion.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [33]
+Cap\'{\i }tulo 5.
+) (./glossary.tex [34
 
-] [52] [53]
-Chapter 6.
+]
+Cap\'{\i }tulo 6.
+[35
 
-Overfull \hbox (47.39081pt too wide) in paragraph at lines 69--71
+]
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [36]) (./references.tex [37]
+Cap\'{\i }tulo 7.
+
+Overfull \hbox (47.39081pt too wide) in paragraph at lines 30--32
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/ide/doc/1.2/COMPSs_IDE_user_guide_
 v1.2.pdf?tracked=true 
  []
 
+[38
 
-Overfull \hbox (6.7917pt too wide) in paragraph at lines 71--73
+]
+Overfull \hbox (6.7917pt too wide) in paragraph at lines 32--34
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/compss/latest/docs/installation-gu
 ide.html?tracked=true 
  []
 
-[54
 
-]
-Overfull \hbox (26.43561pt too wide) in paragraph at lines 78--79
+Overfull \hbox (26.43561pt too wide) in paragraph at lines 39--40
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/extrae-
  []
 
 
-Overfull \hbox (131.63756pt too wide) in paragraph at lines 81--83
+Overfull \hbox (131.63756pt too wide) in paragraph at lines 42--44
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/clusteringsuite_manual.pdf 
  []
 
 
-Overfull \hbox (83.60486pt too wide) in paragraph at lines 83--85
+Overfull \hbox (83.60486pt too wide) in paragraph at lines 44--46
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/w1_introtools.pdf 
  []
 
-) (./temporal_planning.tex [55]
-Chapter 7.
-[56
+) [39] (./memoria.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write5
+\openout5 = `memoria.lof'.
 
-] [57] [58] [59] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+ [40
 
- []
+] (./memoria.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write6
+\openout6 = `memoria.lot'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
-
- []
-
-<img/gantt.png, id=658, 1284.8pt x 246.9225pt>
-File: img/gantt.png Graphic file (type png)
- <use img/gantt.png>
-Package pdftex.def Info: img/gantt.png used on input line 125.
-(pdftex.def)             Requested size: 483.69687pt x 92.96117pt.
-
-<img/pert.png, id=659, 677.53125pt x 160.6pt>
-File: img/pert.png Graphic file (type png)
- <use img/pert.png>
-Package pdftex.def Info: img/pert.png used on input line 129.
-(pdftex.def)             Requested size: 483.69687pt x 114.65903pt.
-) (./budget.tex [61 <./img/gantt.png (PNG copy)> <./img/pert.png (PNG copy)>]
-Chapter 8.
-[62
+ (./appendices.tex [41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Cap\'{\i }tulo 10.
+[42
 
+]
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [43]
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [44]
+Overfull \hbox (6.02107pt too wide) in paragraph at lines 60--61
+\T1/cmr/m/n/12 le (im-port pyex-trae) and emit spe-ci-fic events in-si-de the c
+o-de with \T1/cmr/m/it/12 pyex-trae.eventandcounters(type,
  []
 
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+[45]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [46]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+ [47] <img/tic-tac-toe.png, id=542, 2030.6453pt x 1828.00589pt>
+File: img/tic-tac-toe.png Graphic file (type png)
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 28.
-See the caption package documentation for explanation.
+<use img/tic-tac-toe.png>
+Package pdftex.def Info: img/tic-tac-toe.png used on input line 84.
+(pdftex.def)             Requested size: 569.05511pt x 512.25656pt.
 
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 51.
-See the caption package documentation for explanation.
+LaTeX Warning: Float too large for page by 53.05968pt on input line 87.
 
-[63]
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+[48 <./img/tic-tac-toe.png>]
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 97.
-See the caption package documentation for explanation.
+LaTeX Warning: Hyper reference `fig:fig:ttt-python-funcs-seq' on page 49 undefi
+ned on input line 98.
+
+<img/ttt_500_python_funcsG11.png, id=548, 602.25pt x 132.495pt>
+File: img/ttt_500_python_funcsG11.png Graphic file (type png)
+
+<use img/ttt_500_python_funcsG11.png>
+Package pdftex.def Info: img/ttt_500_python_funcsG11.png used on input line 102
+.
+(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
+
+<img/ttt_500_python_funcsG12.png, id=549, 602.25pt x 132.495pt>
+File: img/ttt_500_python_funcsG12.png Graphic file (type png)
+
+<use img/ttt_500_python_funcsG12.png>
+Package pdftex.def Info: img/ttt_500_python_funcsG12.png used on input line 103
+.
+(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
+
+<img/ttt_500_python_funcsG13.png, id=550, 602.25pt x 132.495pt>
+File: img/ttt_500_python_funcsG13.png Graphic file (type png)
+
+<use img/ttt_500_python_funcsG13.png>
+Package pdftex.def Info: img/ttt_500_python_funcsG13.png used on input line 104
+.
+(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 49 undefined on in
+put line 110.
+
+
+LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 49 undefined on in
+put line 110.
+
+
+<img/New_window_1_2DZoom_range_[1,6]@test.png, id=555, 897.3525pt x 349.305pt>
+File: img/New_window_1_2DZoom_range_[1,6]@test.png Graphic file (type png)
+
+<use img/New_window_1_2DZoom_range_[1,6]@test.png>
+Package pdftex.def Info: img/New_window_1_2DZoom_range_[1,6]@test.png used on i
+nput line 114.
+(pdftex.def)             Requested size: 483.69687pt x 188.28076pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/cluster_graph_mpi.png, id=556, 602.25pt x 132.495pt>
+File: img/cluster_graph_mpi.png Graphic file (type png)
+
+<use img/cluster_graph_mpi.png>
+Package pdftex.def Info: img/cluster_graph_mpi.png used on input line 122.
+(pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
+
+<img/cluster_mpi_IPC.png, id=557, 642.4pt x 401.5pt>
+File: img/cluster_mpi_IPC.png Graphic file (type png)
+
+<use img/cluster_mpi_IPC.png>
+Package pdftex.def Info: img/cluster_mpi_IPC.png used on input line 123.
+(pdftex.def)             Requested size: 483.69687pt x 302.3189pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 4954) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+ [49
+
+
+]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+
+[50 <./img/ttt_500_python_funcsG11.png> <./img/ttt_500_python_funcsG12.png> <./
+img/ttt_500_python_funcsG13.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
+ [51 <./img/New_window_1_2DZoom_range_[1,6]@test.png (PNG copy)>]
+
+LaTeX Warning: Reference `subsec:setup' on page 52 undefined on input line 148.
+
+
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+[52 <./img/cluster_graph_mpi.png> <./img/cluster_mpi_IPC.png>]
+
+LaTeX Warning: Hyper reference `sec:gantt_pert' on page 53 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Reference `sec:gantt_pert' on page 53 undefined on input line 16
+6.
+
+
+Underfull \vbox (badness 1953) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 167.
+LaTeX Info: Redefining \% on input line 167.
+ [53]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 131.
+(caption)                particular \caption on input line 188.
 See the caption package documentation for explanation.
 
-[65]) (./sustainability.tex [66]
-Chapter 9.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+[54]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 211.
+See the caption package documentation for explanation.
 
- [67
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 258.
+See the caption package documentation for explanation.
+
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
+[55]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 294.
+See the caption package documentation for explanation.
+
+LaTeX Info: Redefining \. on input line 294.
+LaTeX Info: Redefining \% on input line 294.
+[56]) (./memoria.bbl
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [57]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [58] [59
 
 ]
-[68]) (./memoria.bbl [69])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [70
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
- (./memoria.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [60])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [61]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+ (./memoria.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: A7191C8D69831F0B9C7A7D2E01C53829;3412.
+(rerunfilecheck)             Checksum: EB4513909D4CC551F2400E7C620F9023;2622.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 9608 strings out of 495028
- 141235 string characters out of 6181498
- 246227 words of memory out of 5000000
- 12394 multiletter control sequences out of 15000+600000
+ 9909 strings out of 494966
+ 145241 string characters out of 6179558
+ 253561 words of memory out of 5000000
+ 12744 multiletter control sequences out of 15000+600000
  22261 words of font info for 62 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 40i,17n,40p,1065b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
+ 40 hyphenation exceptions out of 8191
+ 40i,17n,40p,1064b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
- </home/kurtz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/kur
-tz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/kurtz/.texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/kurtz/.texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecrm0700.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/jkn
+ </home/kurtz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/kur
+tz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/kurtz/.texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/kurtz/.texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecbx1440.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/jkn
 appen/ec/ecrm0800.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 bx1728.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1200.600p
 k> </home/kurtz/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/k
@@ -1112,10 +1195,10 @@ pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/f
 eymr10.pfb>
-Output written on memoria.pdf (73 pages, 675042 bytes).
+Output written on memoria.pdf (64 pages, 641060 bytes).
 PDF statistics:
- 1301 PDF objects out of 1440 (max. 8388607)
- 717 compressed objects within 8 object streams
- 193 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1213 PDF objects out of 1440 (max. 8388607)
+ 622 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
