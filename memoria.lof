@@ -1,4 +1,4 @@
-\select@language {spanish}
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -11,8 +11,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{48}{figure.caption.14}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{50}{figure.caption.15}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{50}{figure.caption.16}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{51}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{48}{figure.caption.13}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{50}{figure.caption.14}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{51}{figure.caption.15}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{52}{figure.caption.16}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Gantt Chart\relax }}{62}{figure.caption.24}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces PERT Chart\relax }}{62}{figure.caption.25}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

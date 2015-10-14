@@ -304,7 +304,9 @@ With this structure then it would be necessary to decorate the \textit{perform\_
 
 The class is constructed with all the required information for the task execution. During the initialization I also do the forementioned translation of the matrix to a python list. After the constructor the run method, which is the actual pyCOMPSs task executed on a worker, recreates the Condensed Matrix from the python list and executes the algorithm's clustering method. 
 
-After the execution of the algorithm it was necessary to again deassign the computed matrix because it is part of the class and, even if it's not a result, once the task is finished pyCOMPSs again tries to serialize the object and fails.
+After the execution of the algorithm it was necessary to again deassign the computed matrix because it is part of the class and, even if it's not a result, once the task is finished pyCOMPSs again tries to serialize the object and fails. Deassigning also the \textit{self} parameter (the python class instance) improved the performance because, otherwise, pyCOMPSs transfers it back because it has been modified (during the condensed matrix assignation).
+
+Next part was to parallelize the analysis tasks which give each clustering a scoring based on different parameters. The method was almost identical to the one used for the algorithm's because these functions also need the condensed matrix to work. Again a wrapper was written to pass the matrix data to each task. These modifications did not improve the performance with respect to the multiprocessing parallelization because the task are too short. Results and traces of this trial are reported nonetheless on section \ref{sec:resperformance}.
 
 
 

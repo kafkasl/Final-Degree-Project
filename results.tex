@@ -5,13 +5,13 @@ This section describes the results of refactoring pyProCT with pyCOMPSs. I divid
 
 \section{Programming Model}
 
-pyCOMPSs framework is supposed to require little extra code to be used so first I will compare difference of size between each version. Figure \ref{tab:sizes} shows the comparison between the different classes required. Most of them are equal for the sequential, MPI and multiprocessing schedulers so they are grouped by the name \textit{original}. However MPI requires changes to some classes so they have a column of their own whenever they differ from the sequential and parallel versions. It's based on the number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
+pyCOMPSs framework is supposed to require little extra code to be used so first I will compare difference of size between each version. Figure \ref{tab:sizes} shows the comparison between the different classes required. It's based on the number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
 
 
 \begin{center}
 	\begin{tabular}{| R{6cm} | L{3cm} | L{3cm} |}
 		\hline
-		Class Name & Original & MPI & pyCOMPSs \\ 
+		Class Name & Original & pyCOMPSs \\ 
 		\hline
 		\hline
 		Driver & 169 / 8180  &  165 / 7911 \\
@@ -49,6 +49,7 @@ As stated, COMPSs required number of parameters are far less. Understanding some
 
 \section{Performance}
 
+\label{sec:resperformance}
 
 COMPSs is designed to harness all the power of supercomputers and use all the available computing resources. The whole initialization of such a framework is not a trivial matter and because of that I expect it to be slow with respect to MPI or OpenMP. However, being designed to run programs with humongous datasets and computation times, this initial overhead is negligible. I expect to see that MPI and multiprocessing schedulers are faster than pyCOMPSs on small datasets and slower on larger ones. 
 

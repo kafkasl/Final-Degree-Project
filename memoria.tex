@@ -36,8 +36,11 @@
 \addcontentsline{toc}{chapter}{\arabic{chapter} List of Tables}
 \listoftables
 
-\input{appendices}
+\stepcounter{chapter}
 
+\begin{appendices}
+\input{appendices}
+\end{appendices}
 
 
 \bibliographystyle{plain}
@@ -45,10 +48,5 @@
 \bibliography{TFG.bib,web_ff.bib,manual.bib}
 
 
-%\input{introduction}
-
-%\input{temporal_planning}
-
-
-
 \end{document}
+

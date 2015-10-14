@@ -1,4 +1,4 @@
-\select@language {spanish}
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -8,7 +8,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {10.1}{\ignorespaces Human Resources Budget\relax }}{54}{table.10.1}
-\contentsline {table}{\numberline {10.2}{\ignorespaces Hardware Resources Budget\relax }}{55}{table.10.2}
-\contentsline {table}{\numberline {10.3}{\ignorespaces Software Resources Budget\relax }}{56}{table.10.3}
-\contentsline {table}{\numberline {10.4}{\ignorespaces Total Budget\relax }}{57}{table.10.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {E.1}{\ignorespaces Human Resources Budget\relax }}{64}{table.1.E.1}
+\contentsline {table}{\numberline {E.2}{\ignorespaces Hardware Resources Budget\relax }}{64}{table.1.E.2}
+\contentsline {table}{\numberline {E.3}{\ignorespaces Software Resources Budget\relax }}{65}{table.1.E.3}
+\contentsline {table}{\numberline {E.4}{\ignorespaces Total Budget\relax }}{66}{table.1.E.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
