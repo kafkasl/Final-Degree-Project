@@ -1,11 +1,11 @@
 \chapter{Results}
 
 
-This section describes the results of refactoring pyProCT with pyCOMPSs. I divided into three subsections. The first one reports the benefits of using pyCOMPSs programming model. The second subsection contains the performance analysis of the results. Finally, the last part deals with tools that the framework offers.
+This section describes the results of refactoring pyProCT with pyCOMPSs. It is divided into three subsections. The first one reports the benefits of using pyCOMPSs programming model. The second subsection contains the performance analysis of the results. Finally, the last part deals with tools that the framework offers.
 
 \section{Programming Model}
 
-pyCOMPSs framework is supposed to require little extra code to be used so first I will compare difference of size between each version. Figure \ref{tab:sizes} shows the comparison between the different classes required. It's based on the number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
+PyCOMPSs framework is supposed to require little extra code to be used so first a comparison between the difference of size of each version will be made. Figure \ref{tab:sizes} shows the comparison between the different classes required. It is based on the number of characters and lines because python conventions encourage the usage of line breaks so the results could be misleading (some functions have one parameter per line).
 
 
 \begin{center}
@@ -65,7 +65,7 @@ The following datasets will be used:
 \item
 \end{itemize}
 
-COMPSs is designed to harness all the power of supercomputers and use all the available computing resources. The whole initialization of such a framework is not a trivial matter and because of that I expect it to be slow with respect to MPI or OpenMP. However, being designed to run programs with humongous datasets and computation times, this initial overhead is negligible. I expect to see that MPI and multiprocessing schedulers are faster than pyCOMPSs on small datasets and slower on larger ones. 
+COMPSs is designed to harness all the power of supercomputers and use all the available computing resources. The whole initialization of such a framework is not a trivial matter and because of that it is expected to be slower with respect to MPI or multiprocessing. However, being designed to run programs with humongous datasets and computation times, this initial overhead is negligible. We hope to see that MPI and multiprocessing schedulers are faster than pyCOMPSs on small datasets and slower on larger ones. 
 
 Figure \ref{fig:small} shows that indeed COMPSs is the slowest parallelization for the smallest dataset. We can observe that multiprocessing is the fastest. That is caused because this method is only able to work on a single node so the initialization and overhead of data and resources handling is indeed much smaller.
 
@@ -90,8 +90,7 @@ Next, figure \ref{tra:mpi16small} shows the same execution but with the MPI sche
 White section is the clustering section. Inside, the green parts are the ones adding the tasks to the scheduler and the blues the actual algorithms execution. The blue stripes outside the white part are the ones corresponding to the analysis tasks (which have the same name and thus the same color).Even if all the threads are performing the task-adding loop they are added only once because the task's name must be unique. Please note that blue stripes are composed of a lot of littler ones (the number of tasks is the same on both executions)  
 
 We can see that on MPI the matrix calculation is quite longer than the multiprocessing (with respect to its own total time as we can not compare across traces). This is because having 16 threads busy makes them all go slower because, being in the same node, they share some resources (like cache) and all of them are accessing the same input file. On the loop that adds the tasks we see again the same behaviour: duplicated work that wastes resources and increases execution time. 
-
-Comparing the two traces we see that multiprocessing is almost all the time in parallel mode and that the sequential parts are small. MPI, on the other hand, despite running in parallel almost all the time it just does useful work in the blue stripes. However, multiprocessing is limited to 16 threads so this is it's performance peak and MPI can use more resources.
+1processing is almost all the time in parallel mode and that the sequential parts are small. MPI, on the other hand, despite running in parallel almost all the time it just does useful work in the blue stripes. However, multiprocessing is limited to 16 threads so this is it's performance peak and MPI can use more resources.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{traces/mpi_16_small.png}

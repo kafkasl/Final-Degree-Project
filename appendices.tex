@@ -18,8 +18,7 @@ Last appendix, \ref{sec:docs}, chapter contains all the documentation used. Here
 
 \section{Motivation}
 
-This section explores pyProCT's scheduler and the tools necessary to analyse its performance. An small sequential testing program was written in order to test it all on a much smaller scale. The next sections' decriptions rely on it to explain the scheduler and tools. More precisely, first section will describe the program to put the reader in context. On the second section I will parallelize the program with the scheduler. Last two sections will describe the analysis process: first the instrumentation for generating traces and then the visualization tool. During the process I will try to find possible problems that may arise due to the parallelization, like the reproducibility on random algorithms or results' validation, which could complicate the posterior work on pyProCT.
-
+This section explores pyProCT's scheduler and the tools necessary to analyse its performance. An small sequential testing program was written in order to test it all on a much smaller scale. The next sections' decriptions rely on it to explain the scheduler and tools. More precisely, first section will describe the program to put the reader in context. On the second section the program will be parallelized with the scheduler. Last two sections will describe the analysis process: first the instrumentation for generating traces and then the visualization tool.
 
 \section{Test program description} 
 The developed program was an command-line implementation of the popular game Tic-tac-toe. It suited quite well the project needs because it featured good parallelization options, stochastic elements, a clear turn structure (easing up the first analysis trials), variable-size parametrized tasks and automatized execution (having two AI playing).
@@ -80,11 +79,11 @@ The second one just needs to add the mentioned function call wherever we are int
 
 To start, \textit{play, montecarlo} and \textit{exploration\_handler} methods were set to be automatically instrumented and two more events were manually added: one before the scheduler intialization and task addition and one just after the scheduler \textit{run()}. On the sequential version \footnote+{ From now, "sequential" will refer to the schedulerless version, "serial" to the one with the sequential scheduler, "parallel" for the one using ProcessParallel and "mpi" for the mpi4py one} this corresponds to before and after looping through the available cells (calling \textit{exploration\_handler} on each iteration).
 
-Support for python is only available from version 3.0 onwards and it's not fully tested so we faced some problems. For the sequential and serial versions everything went well, the traces  were correct and they could be visualized with Paraver. For the parallel version we were not able to extract correct traces as extrae was not able to detect the parallelization method. When I tried the MPI version it didn't work either for two reasons. On one hand, adding the user functions' automatic instrumentation made the whole execution to end with a segmentation fault without generation the traces. On the other hand, using just the event emit method, the visualization showed just one thread. 
+Support for python is only available from version 3.0 onwards and it's not fully tested so we faced some problems. For the sequential and serial versions everything went well, the traces  were correct and they could be visualized with Paraver. For the parallel version we were not able to extract correct traces as extrae was not able to detect the parallelization method. When the MPI version was tried it didn't work for two reasons. On one hand, adding the user functions' automatic instrumentation made the whole execution to end with a segmentation fault without generation the traces. On the other hand, using just the event emit method, the visualization showed just one thread. 
 
 After meeting with BSC people we managed to solve the issue. The problem was that extrae used a sequential-tracing library, so it could not detect the mpi multiple threads. To solve it we substituted this sequential library with an mpi-tracing one. After some work on their part the first issue was also solved by changing some values on \textit{Extrae\_define\_event\_type}. 
 
-For the parallel implementation with multiprocessing this approach wasn't supported. They gave me some ideas to try but to no avail. I linked extrae with a number of different libraries, such as the pthreads one, to see it they were able to hook themselves to the python multiprocessing threads but it didn't work. I left the issue open and went forward. Fortunately, after working on the new tracing system for pyCOMPSs at the BSC, I managed to develop a workaround tracing system albeit quite more rudimentary and inconvenient to use. Extrae has a command line usage of which I used two basic commands:
+For the parallel implementation with multiprocessing this approach wasn't supported. They gave some ideas to try but to no avail. Linking extrae with a number of different libraries, such as the pthreads one, to see it they were able to hook themselves to the python multiprocessing threads didn't work. The issue was left open. Fortunately, a workaround was found: the command line usage of extrae was used. It has two basic commands:
 
 \textit{extrae-cmd init node slots}
 
@@ -147,7 +146,7 @@ Paraver has a wide range of configurations to visualize MPI information (see \hy
 
 This first issue arose when trying to compile and link the development version of pyProCT. It is related with MN3's modules environment. By default, on login, MN3 has 2.6.9 python, however this version is not available to be loaded through the modules; it's only available when no other python has been loaded by the .bashrc file nor manually with \textit{module load PYTHON}. 
 
-pyProCT depends on python 2.7.3 which can be loaded with the modules. At first I compiled and installed it with the default release (2.6.9) with setup.py. On MN3 I had to add a custom installation path (with \textit{--prefix=PATH} option) to setup.py because I have no permissions to write into the default installation directory. After installing it I found out that pyProCT can not be run under python 2.6.9 so I started again all the installation process with 2.7.3 once I figured what was causing the error. 
+pyProCT depends on python 2.7.3 which can be loaded with the modules. At first it was compiled and installed with the default release (2.6.9) with setup.py. On MN3 one needs to add a custom installation path (with \textit{--prefix=PATH} option) to setup.py because of the lack of permissions to write into the default installation directory. After installing, we found out that pyProCT can not be run under python 2.6.9 so the installation process was started again with 2.7.3 version.
 
 The new installation arose the next issue
 
@@ -165,15 +164,15 @@ This is caused when trying to use software build with UCS4 on a UCS2 python vers
 \item Python 2.6.9 $\rightarrow$ UCS4
 \end{itemize}
 
-Python is not a compiled language, so this compilation problem actually comes from the Cython modules integrated into pyProCT. This meant that the new installation (which used the same folder as source) was not recompiling the Cython modules even after issuing a clean command so I cloned the repo again and started from scratch. This time everything ran smoothly. As a curiosity if pyProCT is build with python2.6.9 it can be used with python2.7.3 (although rising some compatibility warnings).
+Python is not a compiled language, so this compilation problem actually comes from the Cython modules integrated into pyProCT. This meant that the new installation (which used the same folder as source) was not recompiling the Cython modules even after issuing a clean command so the repo was cloned in order to start again from scratch. This time everything ran smoothly. As a curiosity, if pyProCT is build with python2.6.9 it can be used with python2.7.3 (although rising some compatibility warnings).
 
 \section{Prody and extrae}
 
-When trying to generate traces with extrae (for MPI and sequential version) I got a Prody error. When trying to resize any kind of structure Prody detects that there is more than one reference to that structure (introduced by the instrumentation) and fails to do the resize. To avoid this I had to manually modify the Prody package and, for each resize, add the parameter \textit{refcheck=False}. This error is raised in order to avoid integrity problems when an object has more than one reference; however we know that the instrumentation will not modify nor actively use those structures so we can safely disable the reference's check. 
+When trying to generate traces with extrae (for MPI and sequential version) a Prody error was found. When trying to resize any kind of structure Prody detects that there is more than one reference to that structure (introduced by the instrumentation) and fails to do the resize. To avoid this one needs to manually modify the Prody package and, for each resize, add the parameter \textit{refcheck=False}. This error is raised in order to avoid integrity problems when an object has more than one reference; however we know that the instrumentation will not modify nor actively use those structures so we can safely disable the reference's check. 
 
 \section{Size of floats}
 
-This issue was raised by some datasets. Depending on the computer and data when I try to recreate the condensed matrix on the pyCOMPSs task I get an incompatible format error. This happens when numpy stores the matrix data (in list format) as floats with 32 bits. The matrix constructor however requires that data to be in floats with 64 bits. To overcome this I found that numpy arrays have a method, \textit{data\_view('float64')}, to select which type of elements should be returned and thus allowing me to always format them as 64-bit floats and solve the issue.
+This issue was raised by some datasets. Depending on the computer and data, when the software tries to recreate the condensed matrix on the pyCOMPSs task an incompatible format error is raised. This happens when numpy stores the matrix data (in list format) as floats with 32 bits. The matrix constructor however requires that data to be in floats with 64 bits. To overcome this,  numpy arrays have a method, \textit{data\_view('float64')}, to select which type of elements should be returned and thus allowing me to always format them as 64-bit floats and solve the issue.
 
 \chapter{Work Methodology}
 \label{sec:methodology}
@@ -192,17 +191,17 @@ To work on this project, a laptop with the text editor Sublime Text 3 was used. 
 \section{Limitations and Risks}
 
 
-The reproducibility problem, defined as the impossibility to repeat an exact execution of the algorithm because of some stochastic parts, such as random initial parameters estimation for example, could difficult the validation and testing part. This could lead to a number of problems. First, the inability to use the black-box validation if two executions with the same data set lead to different results. This clearly affects all the parts of the process involving some kind of randomness. To control this, in case it  affects the testing process, I will try to eliminate the stochastic issues with random seeds and manual and fixed parameter estimation.
+The reproducibility problem, defined as the impossibility to repeat an exact execution of the algorithm because of some stochastic parts, such as random initial parameters estimation for example, could difficult the validation and testing part. This could lead to a number of problems. First, the inability to use the black-box validation if two executions with the same data set lead to different results. This clearly affects all the parts of the process involving some kind of randomness. To control this the stochastic issues will be removed by using random seeds for parameter estimation.
 
 Another issue could be the time. To mitigate this problem the initial set-up phase before the SCRUM iterations has been added (see subsection \ref{subsec:setup} on Tasks Description). The goal of this is to automate the analysis, execution and all the other time-consuming tasks not related to the actual development of the optimizations. 
 
-More problems such as the inability to correctly enqueue jobs to Mare Nostrum III will be addressed by counting on the BSC team and the project director. The usage of extrae and paraver tools could also be difficult. To overcome it, on the one hand, I went to a seminar about that tools. On the other hand I contacted the tools team to get their help when needed. This support is taken into account as an exterior consultant. 
+More problems such as the inability to correctly enqueue jobs to Mare Nostrum III will be addressed by counting on the BSC team and the project director. The usage of extrae and paraver tools could also be difficult. To overcome there are seminars to which one could attend. On the other hand the tools team was contacted to get their help when needed.
 
 At the present time COMPSs team is working on a brand new release (1.3). It has important changes with respect to the last one (1.2). The goal of this project to use, test and evaluate COMPSs so 
 
-I decided that using the development version (1.3) would be more useful for the team and its performance is better than the old one. However, this new one is neither finished nor fully documented and tested. This is probably the major source of problems for this project.
+It was decided that using the development version (1.3) would be more useful for the team and its performance is better than the old one. However, this new one is neither finished nor fully documented and tested. This is probably the major source of problems for this project.
 
-Finally, the decision to work with the development version is the biggest risk of all because I can not finish my work if the release is not stable enough to run pyProCT. 
+Finally, the decision to work with the development version is the biggest risk of all because the work can not be finished if the release is not stable enough to run pyProCT. 
 
 \chapter{Temporal Planning}
 \label{sec:temporal_planning}
@@ -263,7 +262,7 @@ The project aims to optimize an already existing project. This means that the fi
 \item [Git and Github,] \hfill \\ to use the code we need a Github account to fork the original project repository. Once forked we need a git-able OS, in this case Linux Mint 17, to clone it.
 \item [MareNostrum III account,] \hfill \\ for executing the code on the supercomputer and correctly assess it's performance as well as execution limitations for instrumentation purposes.
 \item [SSH-able OS] \hfill \\ to establish secure shell connections to the MareNostrum III computer for the program execution.
-\item [Paraver and other analysis tools,] \hfill \\ to ease the understanding process with execution diagrams. Also, on this first stage, I will start looking for the best available tools for the posterior analysis stage.
+\item [Paraver and other analysis tools,] \hfill \\ to ease the understanding process with execution diagrams. Also, on this first stage, we will start looking for the best available tools for the posterior analysis stage.
 
 \end{description}
 
@@ -281,7 +280,7 @@ See \hypertarget{subsec:familiarresources}{Code Familiarization resources list~\
 \subsection{Common set up for all SCRUM cycles}
 \label{subsec:setup}
 
-Once I am familiar with the code and the analysis tools have been chosen, the next step will be to instrument the code for it's preliminary analysis. The instrumentation should be deep enough to test all the possible implementations to be done, regardless they are performed on the matrix distances calculation, task level or scheduler level.
+Once familiarized with the code and the analysis tools, the next step will be to instrument the code for it's preliminary analysis. The instrumentation should be deep enough to test all the possible implementations to be done, regardless they are performed on the matrix distances calculation, task level or scheduler level.
 
 On this stage we will also do a preliminar work aimed to automate and speed up as much as possible the code analysis and execution. On one hand, this will speed up the SCRUM iterations by automating the analysis and execution with tools like bash scripts, allowing us to focus on the actual development and analysis and avoid wasting time on repetitive task as graphs' generation or the remote execution. On the other hand, it will also help to avoid human errors on the execution parameters, analysis settings and environment configuration.
 
@@ -343,7 +342,7 @@ This section describes the required budget for the pyProCT optimization project.
 The project was completed by developer and a supervisor. The first worked with an eight-long workday from Monday to Friday. The second's task was to supervise and assess the working process, give advice and help to solve issues. The estimation of the human cost is tied to the work time represented, in this case, by the Gantt Chart and the task description provided on the \hyperref[sec:gantt_pert]{\ref*{sec:gantt_pert} Gantt and PERT charts} section of the temporal planning. 
 
 
-First is important to note that the Project Management task overlaps with other tasks. However the duration of this section is tied to the programmed schedule of the GEP course, not to the amount of work required to finish it. Thanks to that, we will consider that from 12th February to 12th March the workday is going to be equally distributed amongst the overlapping tasks, which are less work-intensive because they are merely familiarization and research tasks. Similarly, because the results are tied to the development of COMPSs new release, I will start writing the report before having all the results. This way I will have almost everything ready before having the results. 
+First is important to note that the Project Management task overlaps with other tasks. However the duration of this section is tied to the programmed schedule of the GEP course, not to the amount of work required to finish it. Thanks to that, we will consider that from 12th February to 12th March the workday is going to be equally distributed amongst the overlapping tasks, which are less work-intensive because they are merely familiarization and research tasks. Similarly, because the results are tied to the development of COMPSs new release, it the report will be started before having all the results. 
 
 The defined work period has 176 workdays from 12th February to 13th October (12d + 22d + 22d + 22d + 5d monthly breakdown) amounting to approximately a total of 1400 hours. For the supervisor we estimate 200 hours distributed between meetings, project setup, problem's resolution and correction of this document. 
 \\
