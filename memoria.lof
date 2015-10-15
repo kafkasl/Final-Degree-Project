@@ -8,18 +8,21 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Clustering Section Execution Flow\relax }}{19}{figure.caption.8}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Postprocess Section Execution Flow\relax }}{22}{figure.caption.10}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Execution times on small dataset given the number of threads\relax }}{34}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Multiprocessing scheduler with small dataset and 16 threads\relax }}{35}{figure.caption.12}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces MPI scheduler with small dataset and 16 threads\relax }}{36}{figure.caption.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{48}{figure.caption.14}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{50}{figure.caption.15}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{50}{figure.caption.16}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{51}{figure.caption.17}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{52}{figure.caption.17}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{54}{figure.caption.18}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{54}{figure.caption.19}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{55}{figure.caption.20}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Gantt Chart\relax }}{62}{figure.caption.24}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces PERT Chart\relax }}{62}{figure.caption.25}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Gantt Chart\relax }}{66}{figure.caption.27}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces PERT Chart\relax }}{66}{figure.caption.28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
