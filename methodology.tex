@@ -306,7 +306,11 @@ The class is constructed with all the required information for the task executio
 
 After the execution of the algorithm it was necessary to again deassign the computed matrix because it is part of the class and, even if it's not a result, once the task is finished pyCOMPSs again tries to serialize the object and fails. Deassigning also the \textit{self} parameter (the python class instance) improved the performance because, otherwise, pyCOMPSs transfers it back because it has been modified (during the condensed matrix assignation).
 
-Next part was to parallelize the analysis tasks which give each clustering a scoring based on different parameters. The method was almost identical to the one used for the algorithm's because these functions also need the condensed matrix to work. Again a wrapper was written to pass the matrix data to each task. These modifications did not improve the performance with respect to the multiprocessing parallelization because the task are too short. Results and traces of this trial are reported nonetheless on section \ref{sec:resperformance}.
+After analysing the results we found out two more simple optimizations. Because hierarchical and spectral clustering methods have long initializations (performed in a sequential fashion) the framework is locked while computing them. Due to the fact that they are the first two algorithms to be launched the workers remain idle during that time. In order minimize that time the algorithm's execution order was changed calling them at the end. This way while their initialization is performed all the other algorithms are already running and that initialization time is shadowed under the rest computations. Traces and results of this modification can be seen on section \ref{sec:sch_oder}.
+
+Next part was to parallelize the analysis tasks which give each clustering a scoring based on different parameters. The method was almost identical to the one used for the algorithm's because these functions also need the condensed matrix to work. Again a wrapper was written to pass the matrix data to each task. Results and traces of this trial are reported nonetheless on section \ref{sec:resperformance}.
+
+
 
 
 

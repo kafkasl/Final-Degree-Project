@@ -16,45 +16,46 @@
 \BOOKMARK [1][-]{section.3.3}{Validation tool: pyProCT-regression}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.3.1}{Basic tests and issues}{section.3.3}% 17
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Programming Model}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{Performance}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.3}{Tools}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 22
-\BOOKMARK [0][-]{chapter.6}{Glossary}{}% 23
-\BOOKMARK [0][-]{chapter.6}{7 List of Figures}{}% 24
-\BOOKMARK [0][-]{chapter*.14}{8 List of Tables}{}% 25
-\BOOKMARK [0][-]{section*.16}{Appendices}{}% 26
-\BOOKMARK [0][-]{Appendix.1.A}{Scheduler and Performance Tools}{}% 27
-\BOOKMARK [1][-]{section.1.A.1}{Motivation}{Appendix.1.A}% 28
-\BOOKMARK [1][-]{section.1.A.2}{Test program description}{Appendix.1.A}% 29
-\BOOKMARK [1][-]{section.1.A.3}{PyScheduler}{Appendix.1.A}% 30
-\BOOKMARK [1][-]{section.1.A.4}{Instrumenting with Extrae}{Appendix.1.A}% 31
-\BOOKMARK [1][-]{section.1.A.5}{Visualizing with Paraver}{Appendix.1.A}% 32
-\BOOKMARK [0][-]{Appendix.1.B}{Problems}{}% 33
-\BOOKMARK [1][-]{section.1.B.1}{Python versions}{Appendix.1.B}% 34
-\BOOKMARK [1][-]{section.1.B.2}{Unicode encoding}{Appendix.1.B}% 35
-\BOOKMARK [1][-]{section.1.B.3}{Prody and extrae}{Appendix.1.B}% 36
-\BOOKMARK [1][-]{section.1.B.4}{Size of floats}{Appendix.1.B}% 37
-\BOOKMARK [0][-]{Appendix.1.C}{Work Methodology}{}% 38
-\BOOKMARK [1][-]{section.1.C.1}{Limitations and Risks}{Appendix.1.C}% 39
-\BOOKMARK [0][-]{Appendix.1.D}{Temporal Planning}{}% 40
-\BOOKMARK [1][-]{section.1.D.1}{Task List}{Appendix.1.D}% 41
-\BOOKMARK [1][-]{section.1.D.2}{Tasks Description}{Appendix.1.D}% 42
-\BOOKMARK [2][-]{subsection.1.D.2.1}{Project Management}{section.1.D.2}% 43
-\BOOKMARK [2][-]{subsection.1.D.2.2}{Software design description}{section.1.D.2}% 44
-\BOOKMARK [2][-]{subsection.1.D.2.3}{Analysis tools' research}{section.1.D.2}% 45
-\BOOKMARK [2][-]{subsection.1.D.2.4}{Common set up for all SCRUM cycles}{section.1.D.2}% 46
-\BOOKMARK [2][-]{subsection.1.D.2.5}{SCRUM iterations}{section.1.D.2}% 47
-\BOOKMARK [2][-]{subsection.1.D.2.6}{Global performance analysis}{section.1.D.2}% 48
-\BOOKMARK [1][-]{section.1.D.3}{Gantt and PERT charts}{Appendix.1.D}% 49
-\BOOKMARK [0][-]{Appendix.1.E}{Budget}{}% 50
-\BOOKMARK [1][-]{section.1.E.1}{Human Resources}{Appendix.1.E}% 51
-\BOOKMARK [1][-]{section.1.E.2}{Hardware Resources}{Appendix.1.E}% 52
-\BOOKMARK [1][-]{section.1.E.3}{Software Resources}{Appendix.1.E}% 53
-\BOOKMARK [1][-]{section.1.E.4}{Total Budget}{Appendix.1.E}% 54
-\BOOKMARK [0][-]{Appendix.1.F}{Sustainability}{}% 55
-\BOOKMARK [1][-]{section.1.F.1}{Economic}{Appendix.1.F}% 56
-\BOOKMARK [1][-]{section.1.F.2}{Social}{Appendix.1.F}% 57
-\BOOKMARK [1][-]{section.1.F.3}{Environmental}{Appendix.1.F}% 58
-\BOOKMARK [0][-]{Appendix.1.G}{List of References}{}% 59
-\BOOKMARK [0][-]{Appendix.1.G}{Bibliography}{}% 60
+\BOOKMARK [1][-]{section.4.1}{Tools}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{Programming Model}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{Performance}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.4}{Scheduling order}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 23
+\BOOKMARK [0][-]{chapter.6}{Glossary}{}% 24
+\BOOKMARK [0][-]{chapter.6}{7 List of Figures}{}% 25
+\BOOKMARK [0][-]{chapter*.19}{8 List of Tables}{}% 26
+\BOOKMARK [0][-]{section*.21}{Appendices}{}% 27
+\BOOKMARK [0][-]{Appendix.1.A}{Scheduler and Performance Tools}{}% 28
+\BOOKMARK [1][-]{section.1.A.1}{Motivation}{Appendix.1.A}% 29
+\BOOKMARK [1][-]{section.1.A.2}{Test program description}{Appendix.1.A}% 30
+\BOOKMARK [1][-]{section.1.A.3}{PyScheduler}{Appendix.1.A}% 31
+\BOOKMARK [1][-]{section.1.A.4}{Instrumenting with Extrae}{Appendix.1.A}% 32
+\BOOKMARK [1][-]{section.1.A.5}{Visualizing with Paraver}{Appendix.1.A}% 33
+\BOOKMARK [0][-]{Appendix.1.B}{Problems}{}% 34
+\BOOKMARK [1][-]{section.1.B.1}{Python versions}{Appendix.1.B}% 35
+\BOOKMARK [1][-]{section.1.B.2}{Unicode encoding}{Appendix.1.B}% 36
+\BOOKMARK [1][-]{section.1.B.3}{Prody and extrae}{Appendix.1.B}% 37
+\BOOKMARK [1][-]{section.1.B.4}{Size of floats}{Appendix.1.B}% 38
+\BOOKMARK [0][-]{Appendix.1.C}{Work Methodology}{}% 39
+\BOOKMARK [1][-]{section.1.C.1}{Limitations and Risks}{Appendix.1.C}% 40
+\BOOKMARK [0][-]{Appendix.1.D}{Temporal Planning}{}% 41
+\BOOKMARK [1][-]{section.1.D.1}{Task List}{Appendix.1.D}% 42
+\BOOKMARK [1][-]{section.1.D.2}{Tasks Description}{Appendix.1.D}% 43
+\BOOKMARK [2][-]{subsection.1.D.2.1}{Project Management}{section.1.D.2}% 44
+\BOOKMARK [2][-]{subsection.1.D.2.2}{Software design description}{section.1.D.2}% 45
+\BOOKMARK [2][-]{subsection.1.D.2.3}{Analysis tools' research}{section.1.D.2}% 46
+\BOOKMARK [2][-]{subsection.1.D.2.4}{Common set up for all SCRUM cycles}{section.1.D.2}% 47
+\BOOKMARK [2][-]{subsection.1.D.2.5}{SCRUM iterations}{section.1.D.2}% 48
+\BOOKMARK [2][-]{subsection.1.D.2.6}{Global performance analysis}{section.1.D.2}% 49
+\BOOKMARK [1][-]{section.1.D.3}{Gantt and PERT charts}{Appendix.1.D}% 50
+\BOOKMARK [0][-]{Appendix.1.E}{Budget}{}% 51
+\BOOKMARK [1][-]{section.1.E.1}{Human Resources}{Appendix.1.E}% 52
+\BOOKMARK [1][-]{section.1.E.2}{Hardware Resources}{Appendix.1.E}% 53
+\BOOKMARK [1][-]{section.1.E.3}{Software Resources}{Appendix.1.E}% 54
+\BOOKMARK [1][-]{section.1.E.4}{Total Budget}{Appendix.1.E}% 55
+\BOOKMARK [0][-]{Appendix.1.F}{Sustainability}{}% 56
+\BOOKMARK [1][-]{section.1.F.1}{Economic}{Appendix.1.F}% 57
+\BOOKMARK [1][-]{section.1.F.2}{Social}{Appendix.1.F}% 58
+\BOOKMARK [1][-]{section.1.F.3}{Environmental}{Appendix.1.F}% 59
+\BOOKMARK [0][-]{Appendix.1.G}{List of References}{}% 60
+\BOOKMARK [0][-]{Appendix.1.G}{Bibliography}{}% 61

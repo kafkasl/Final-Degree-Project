@@ -8,21 +8,26 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Clustering Section Execution Flow\relax }}{19}{figure.caption.8}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Postprocess Section Execution Flow\relax }}{22}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Execution times on small dataset given the number of threads\relax }}{34}{figure.caption.11}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Multiprocessing scheduler with small dataset and 16 threads\relax }}{35}{figure.caption.12}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces MPI scheduler with small dataset and 16 threads\relax }}{36}{figure.caption.13}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces COMPSs monitor graph for 4 threads and small dataset\relax }}{41}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces COMPSs monitor tasks information\relax }}{42}{figure.caption.12}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Trace for dataset 5 without ordering algorithm's execution\relax }}{43}{figure.caption.13}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Trace for dataset 5 ordering algorithm's execution\relax }}{43}{figure.caption.14}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Multiprocessing scheduler with dataset 1 and 16 threads\relax }}{43}{figure.caption.15}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces MPI scheduler with dataset 1 and 16 threads\relax }}{44}{figure.caption.16}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relative execution times for three versions and datasets 1, 2, 3 and 4\relax }}{44}{figure.caption.17}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Section of traces for execution of dataset 4 with 6 nodes (upper) and 2 nodes (lower)\relax }}{45}{figure.caption.18}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{52}{figure.caption.17}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{54}{figure.caption.18}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{54}{figure.caption.19}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{55}{figure.caption.20}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Tic-tac-toe Execution Flow\relax }}{61}{figure.caption.22}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Tic-tac-toe 500 iterations executions\relax }}{63}{figure.caption.23}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Tic-tac-toe MPI information for a 500 iteration execution\relax }}{63}{figure.caption.24}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Tic-tac-toe timeline and clustering for 500 iteration MPI execution\relax }}{64}{figure.caption.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Gantt Chart\relax }}{66}{figure.caption.27}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces PERT Chart\relax }}{66}{figure.caption.28}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Gantt Chart\relax }}{75}{figure.caption.32}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces PERT Chart\relax }}{75}{figure.caption.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

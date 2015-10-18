@@ -1,1 +1,11 @@
 \chapter{Conclusion}
+
+
+We have seen that pyCOMPSs framework does indeed increase the performance on large datasets. On smaller inputs it is not worth to use it due to all the complex initialization process performed by the framework. Because of that we deem a good decision to have added pyCOMPSs to pyProCT's schedulers, instead of substituting them, leaving to the user the decision of which fits best its datasets. Despite that, the performance could be further increased by defining as tasks the algorithm's and analysis' classes themselves instead of using the wrapper method. This would require to duplicate all code for the algorithms and analysis in order to support the other schedulers.
+
+Thanks to running over multiple nodes now the program can overcome memory problems. However performance is limited by the slowest algorithms no matter how resources are assigned to it. PyCOMPSs is now offering the ability to define the required resources for a task. This could allow to parallelize that slower algorithms inside the tasks thus reducing that bottleneck. 
+
+To sum up, pyProCT is now faster and offers all pyCOMPSs tools to analyse code and executions. The way it was refactored makes that if more algorithms are added the performance will be further increased. Aso pyCOMPSs is actively under development so new useful features and performance improvements will be presented and pyProCT will benefit from them without requiring modifications, or maybe small ones, at all.
+
+
+

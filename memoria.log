@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.12)  15 OCT 2015 20:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.12)  18 OCT 2015 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -742,7 +742,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 3.
 [10
 
-] <img/global.png, id=416, 895.58118pt x 1351.87411pt>
+] <img/global.png, id=421, 895.58118pt x 1351.87411pt>
 File: img/global.png Graphic file (type png)
  <use img/global.png>
 Package pdftex.def Info: img/global.png used on input line 46.
@@ -752,7 +752,7 @@ Package pdftex.def Info: img/global.png used on input line 46.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11] [12 <./img/global.png>]
-<img/global_sequence_driver.jpg, id=427, 1279.78125pt x 732.7375pt>
+<img/global_sequence_driver.jpg, id=432, 1279.78125pt x 732.7375pt>
 File: img/global_sequence_driver.jpg Graphic file (type jpg)
 
 <use img/global_sequence_driver.jpg>
@@ -772,7 +772,7 @@ Overfull \hbox (4.2598pt too wide) in paragraph at lines 89--90
 [14
 
 
-] [15] <img/data_sequence_driver.png, id=444, 1925.78294pt x 1303.69412pt>
+] [15] <img/data_sequence_driver.png, id=449, 1925.78294pt x 1303.69412pt>
 File: img/data_sequence_driver.png Graphic file (type png)
 
 <use img/data_sequence_driver.png>
@@ -786,7 +786,7 @@ LaTeX Warning: Float too large for page by 3.07072pt on input line 97.
 
 
 ] [18]
-<img/clustering_sequence_driver.png, id=462, 2426.0047pt x 1677.79765pt>
+<img/clustering_sequence_driver.png, id=467, 2426.0047pt x 1677.79765pt>
 File: img/clustering_sequence_driver.png Graphic file (type png)
 
 <use img/clustering_sequence_driver.png>
@@ -801,7 +801,7 @@ LaTeX Warning: Float too large for page by 13.06657pt on input line 154.
 
 
 ] [21]
-<img/postprocess_sequence_driver.png, id=481, 2002.30412pt x 1306.52823pt>
+<img/postprocess_sequence_driver.png, id=486, 2002.30412pt x 1306.52823pt>
 File: img/postprocess_sequence_driver.png Graphic file (type png)
 
 <use img/postprocess_sequence_driver.png>
@@ -822,124 +822,262 @@ obj)
 
 LaTeX Warning: Citation `Gil2013' on page 26 undefined on input line 291.
 
-[26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-[28] [29]) (./results.tex [30]
+[26] [27] [28] [29]) (./results.tex [30]
 Chapter 4.
+<img/main_01_completeGraph.png, id=534, 597.10884pt x 844.32512pt>
+File: img/main_01_completeGraph.png Graphic file (type png)
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 26.
-See the caption package documentation for explanation.
+<use img/main_01_completeGraph.png>
+Package pdftex.def Info: img/main_01_completeGraph.png used on input line 15.
+(pdftex.def)             Requested size: 497.01244pt x 702.78308pt.
+
+Overfull \hbox (13.31557pt too wide) in paragraph at lines 15--16
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.49998pt on input line 18.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31
 
 ]
-Underfull \vbox (badness 2790) has occurred while \output is active []
+File: img/main_01_completeGraph.png Graphic file (type png)
+ <use img/main_01_completeGraph.png>
+Package pdftex.def Info: img/main_01_completeGraph.png used on input line 25.
+(pdftex.def)             Requested size: 497.01244pt x 702.78308pt.
 
- [32]
-[33] <img/small_graphs.png, id=543, 578.16pt x 433.62pt>
-File: img/small_graphs.png Graphic file (type png)
+Overfull \hbox (13.31557pt too wide) in paragraph at lines 25--26
+[][] 
+ []
 
-<use img/small_graphs.png>
-Package pdftex.def Info: img/small_graphs.png used on input line 73.
-(pdftex.def)             Requested size: 483.69687pt x 362.76945pt.
- [34 <./img/small_graphs.png>]
-<traces/par_16_small.png, id=550, 1097.09875pt x 488.82625pt>
-File: traces/par_16_small.png Graphic file (type png)
 
-<use traces/par_16_small.png>
-Package pdftex.def Info: traces/par_16_small.png used on input line 83.
-(pdftex.def)             Requested size: 483.69687pt x 215.51682pt.
-
-<traces/mpi_16_small.png, id=552, 953.5625pt x 426.59375pt>
-File: traces/mpi_16_small.png Graphic file (type png)
-
-<use traces/mpi_16_small.png>
-Package pdftex.def Info: traces/mpi_16_small.png used on input line 90.
-(pdftex.def)             Requested size: 483.69687pt x 216.39476pt.
+LaTeX Warning: Float too large for page by 24.49998pt on input line 28.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./conclusion.tex [35 <./traces/par_16_small.png>] [36 <./traces/mpi_16_small
-.png (PNG copy)>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 53.
+See the caption package documentation for explanation.
+
+[32]
+Underfull \vbox (badness 2790) has occurred while \output is active []
+
+ [33]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 105.
+See the caption package documentation for explanation.
+
+[34] <traces/compss_2_small_noorder.png, id=564, 885.3075pt x 294.09875pt>
+File: traces/compss_2_small_noorder.png Graphic file (type png)
+
+<use traces/compss_2_small_noorder.png>
+Package pdftex.def Info: traces/compss_2_small_noorder.png used on input line 1
+21.
+(pdftex.def)             Requested size: 483.69687pt x 160.68675pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<traces/compss_2_small_order.png, id=565, 885.3075pt x 294.09875pt>
+File: traces/compss_2_small_order.png Graphic file (type png)
+
+<use traces/compss_2_small_order.png>
+Package pdftex.def Info: traces/compss_2_small_order.png used on input line 127
+.
+(pdftex.def)             Requested size: 483.69687pt x 160.68675pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35] <traces/par_16_small.png, id=574, 1097.09875pt x 488.82625pt>
+File: traces/par_16_small.png Graphic file (type png)
+
+<use traces/par_16_small.png>
+Package pdftex.def Info: traces/par_16_small.png used on input line 137.
+(pdftex.def)             Requested size: 483.69687pt x 215.51682pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<traces/mpi_16_small.png, id=576, 953.5625pt x 426.59375pt>
+File: traces/mpi_16_small.png Graphic file (type png)
+
+<use traces/mpi_16_small.png>
+Package pdftex.def Info: traces/mpi_16_small.png used on input line 149.
+(pdftex.def)             Requested size: 483.69687pt x 216.39476pt.
+ [36]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:small' on page 37 undefined on input line 159.
+
+<img/graph.png, id=586, 455.45157pt x 255.95625pt>
+File: img/graph.png Graphic file (type png)
+ <use img/graph.png>
+Package pdftex.def Info: img/graph.png used on input line 166.
+(pdftex.def)             Requested size: 387.13567pt x 217.56383pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 183.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (5.4944pt too wide) in paragraph at lines 172--183
+ [] 
+ []
+
+[37]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 205.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (30.29436pt too wide) in paragraph at lines 194--205
+ [] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 224.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (30.29436pt too wide) in paragraph at lines 213--224
+ [] 
+ []
+
+[38]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 242.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (30.29436pt too wide) in paragraph at lines 231--242
+ [] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 259.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (30.29436pt too wide) in paragraph at lines 248--259
+ [] 
+ []
+
+[39] <traces/compss_6_piece_tasks.png, id=612, 978.65625pt x 322.20375pt>
+File: traces/compss_6_piece_tasks.png Graphic file (type png)
+
+<use traces/compss_6_piece_tasks.png>
+Package pdftex.def Info: traces/compss_6_piece_tasks.png used on input line 267
+.
+(pdftex.def)             Requested size: 483.69687pt x 159.24797pt.
+
+<traces/compss_2_piece_tasks.png, id=613, 978.65625pt x 322.20375pt>
+File: traces/compss_2_piece_tasks.png Graphic file (type png)
+
+<use traces/compss_2_piece_tasks.png>
+Package pdftex.def Info: traces/compss_2_piece_tasks.png used on input line 268
+.
+(pdftex.def)             Requested size: 483.69687pt x 159.24797pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./conclusion.tex [40] [41 <./img/main_01_completeGraph.png>] [42] [43 <./tra
+ces/compss_2_small_noorder.png> <./traces/compss_2_small_order.png> <./traces/p
+ar_16_small.png>] [44 <./traces/mpi_16_small.png (PNG copy)> <./img/graph.png (
+PNG copy)>] [45 <./traces/compss_6_piece_tasks.png> <./traces/compss_2_piece_ta
+sks.png>]
 Chapter 5.
-) (./glossary.tex [37
+) (./glossary.tex [46
 
 ]
 Chapter 6.
-[38
+[47
 
-] [39] [40]) (./references.tex) [41] (./memoria.lof)
+] [48] [49]) [50] (./memoria.lof [51
+
+])
 \tf@lof=\write5
 \openout5 = `memoria.lof'.
 
- [42
-
-] (./memoria.lot)
+ [52] (./memoria.lot)
 \tf@lot=\write6
 \openout6 = `memoria.lot'.
 
+ [53
 
-[43
+] [54
 
-] [44
-
-
-] (./appendices.tex [45]
-Appendix A.
-[46
 
 ]
-Overfull \hbox (2.1123pt too wide) in paragraph at lines 31--32
+(./appendices.tex [55]
+Appendix A.
+
+Overfull \hbox (2.1123pt too wide) in paragraph at lines 30--31
 []\T1/cmr/m/n/12 To do this it first gets all the free cells, then for each ava
 il-able one it calls the ex-plo-ration_handler
  []
 
-[47] [48]
-Overfull \hbox (12.54726pt too wide) in paragraph at lines 75--76
+[56
+
+] [57] [58]
+Overfull \hbox (12.54726pt too wide) in paragraph at lines 74--75
 \T1/cmr/m/n/12 ule (im-port pyex-trae) and emit spe-cific events in-side the co
 de with \T1/cmr/m/it/12 pyex-trae.eventandcounters(type,
  []
 
-[49] [50] [51] <img/tic-tac-toe.png, id=676, 2030.6453pt x 1828.00589pt>
+[59] [60] <img/tic-tac-toe.png, id=765, 2030.6453pt x 1828.00589pt>
 File: img/tic-tac-toe.png Graphic file (type png)
 
 <use img/tic-tac-toe.png>
-Package pdftex.def Info: img/tic-tac-toe.png used on input line 99.
+Package pdftex.def Info: img/tic-tac-toe.png used on input line 98.
 (pdftex.def)             Requested size: 569.05511pt x 512.25656pt.
 
 
-LaTeX Warning: Float too large for page by 53.05968pt on input line 102.
+LaTeX Warning: Float too large for page by 53.05968pt on input line 101.
 
-[52 <./img/tic-tac-toe.png>]
+[61 <./img/tic-tac-toe.png>]
 
-LaTeX Warning: Hyper reference `fig:fig:ttt-python-funcs-seq' on page 53 undefi
-ned on input line 113.
+LaTeX Warning: Hyper reference `fig:fig:ttt-python-funcs-seq' on page 62 undefi
+ned on input line 112.
 
-<img/ttt_500_python_funcsG11.png, id=682, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG11.png, id=771, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG11.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG11.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG11.png used on input line 117
+Package pdftex.def Info: img/ttt_500_python_funcsG11.png used on input line 116
 .
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/ttt_500_python_funcsG12.png, id=683, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG12.png, id=772, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG12.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG12.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG12.png used on input line 118
+Package pdftex.def Info: img/ttt_500_python_funcsG12.png used on input line 117
 .
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/ttt_500_python_funcsG13.png, id=684, 602.25pt x 132.495pt>
+<img/ttt_500_python_funcsG13.png, id=773, 602.25pt x 132.495pt>
 File: img/ttt_500_python_funcsG13.png Graphic file (type png)
 
 <use img/ttt_500_python_funcsG13.png>
-Package pdftex.def Info: img/ttt_500_python_funcsG13.png used on input line 119
+Package pdftex.def Info: img/ttt_500_python_funcsG13.png used on input line 118
 .
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
@@ -947,184 +1085,184 @@ Package pdftex.def Info: img/ttt_500_python_funcsG13.png used on input line 119
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 53 undefined on in
-put line 125.
+LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 62 undefined on in
+put line 124.
 
 
-LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 53 undefined on in
-put line 125.
+LaTeX Warning: Hyper reference `fig:fig:ttt-mpi-IPC' on page 62 undefined on in
+put line 124.
 
 
-<img/New_window_1_2DZoom_range_[1,6]@test.png, id=689, 897.3525pt x 349.305pt>
+<img/New_window_1_2DZoom_range_[1,6]@test.png, id=778, 897.3525pt x 349.305pt>
 File: img/New_window_1_2DZoom_range_[1,6]@test.png Graphic file (type png)
 
 <use img/New_window_1_2DZoom_range_[1,6]@test.png>
 Package pdftex.def Info: img/New_window_1_2DZoom_range_[1,6]@test.png used on i
-nput line 129.
+nput line 128.
 (pdftex.def)             Requested size: 483.69687pt x 188.28076pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/cluster_graph_mpi.png, id=690, 602.25pt x 132.495pt>
+<img/cluster_graph_mpi.png, id=779, 602.25pt x 132.495pt>
 File: img/cluster_graph_mpi.png Graphic file (type png)
 
 <use img/cluster_graph_mpi.png>
-Package pdftex.def Info: img/cluster_graph_mpi.png used on input line 137.
+Package pdftex.def Info: img/cluster_graph_mpi.png used on input line 136.
 (pdftex.def)             Requested size: 483.69687pt x 106.41664pt.
 
-<img/cluster_mpi_IPC.png, id=691, 642.4pt x 401.5pt>
+<img/cluster_mpi_IPC.png, id=780, 642.4pt x 401.5pt>
 File: img/cluster_mpi_IPC.png Graphic file (type png)
 
 <use img/cluster_mpi_IPC.png>
-Package pdftex.def Info: img/cluster_mpi_IPC.png used on input line 138.
+Package pdftex.def Info: img/cluster_mpi_IPC.png used on input line 137.
 (pdftex.def)             Requested size: 483.69687pt x 302.3189pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53
+[62
 
 
-] [54 <./img/ttt_500_python_funcsG11.png> <./img/ttt_500_python_funcsG12.png> <
+] [63 <./img/ttt_500_python_funcsG11.png> <./img/ttt_500_python_funcsG12.png> <
 ./img/ttt_500_python_funcsG13.png> <./img/New_window_1_2DZoom_range_[1,6]@test.
-png (PNG copy)>] [55 <./img/cluster_graph_mpi.png> <./img/cluster_mpi_IPC.png>]
+png (PNG copy)>] [64 <./img/cluster_graph_mpi.png> <./img/cluster_mpi_IPC.png>]
 
 Appendix B.
-[56
+[65
 
-] [57]
+] [66]
 Appendix C.
-[58
+[67
 
-] [59] [60]
+] [68] [69]
 Appendix D.
-[61
+[70
 
-] [62] [63] [64]
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
+] [71] [72] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
 
  []
 
-<img/gantt.png, id=771, 1284.8pt x 246.9225pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
+
+ []
+
+<img/gantt.png, id=859, 1284.8pt x 246.9225pt>
 File: img/gantt.png Graphic file (type png)
  <use img/gantt.png>
-Package pdftex.def Info: img/gantt.png used on input line 324.
+Package pdftex.def Info: img/gantt.png used on input line 323.
 (pdftex.def)             Requested size: 483.69687pt x 92.96117pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/pert.png, id=772, 677.53125pt x 160.6pt>
+<img/pert.png, id=860, 677.53125pt x 160.6pt>
 File: img/pert.png Graphic file (type png)
  <use img/pert.png>
-Package pdftex.def Info: img/pert.png used on input line 328.
+Package pdftex.def Info: img/pert.png used on input line 327.
 (pdftex.def)             Requested size: 483.69687pt x 114.65903pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66 <./img/gantt.png (PNG copy)> <./img/pert.png (PNG copy)>]
+[74] [75 <./img/gantt.png (PNG copy)> <./img/pert.png (PNG copy)>]
 Appendix E.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
-[67
+[76
 
 ]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 365.
+(caption)                particular \caption on input line 364.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 388.
+(caption)                particular \caption on input line 387.
 See the caption package documentation for explanation.
 
-[68]
+[77]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 435.
+(caption)                particular \caption on input line 434.
 See the caption package documentation for explanation.
 
-[69]
+[78]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 471.
+(caption)                particular \caption on input line 470.
 See the caption package documentation for explanation.
 
-[70]
+[79]
 Appendix F.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71
+ [80
 
 ]
-[72] [73]
+[81] [82]
 Appendix G.
 
-Overfull \hbox (47.39081pt too wide) in paragraph at lines 536--538
+Overfull \hbox (47.39081pt too wide) in paragraph at lines 535--537
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/ide/doc/1.2/COMPSs_IDE_user_guide_
 v1.2.pdf?tracked=true 
  []
 
-[74
+[83
 
 ]
-Overfull \hbox (6.7917pt too wide) in paragraph at lines 538--540
+Overfull \hbox (6.7917pt too wide) in paragraph at lines 537--539
 \T1/cmr/m/n/12 http://compss.bsc.es/releases/compss/latest/docs/installation-gu
 ide.html?tracked=true 
  []
 
 
-Overfull \hbox (26.43561pt too wide) in paragraph at lines 545--546
+Overfull \hbox (26.43561pt too wide) in paragraph at lines 544--545
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/extrae-
  []
 
 
-Overfull \hbox (131.63756pt too wide) in paragraph at lines 548--550
+Overfull \hbox (131.63756pt too wide) in paragraph at lines 547--549
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/clusteringsuite_manual.pdf 
  []
 
 
-Overfull \hbox (83.60486pt too wide) in paragraph at lines 550--552
+Overfull \hbox (83.60486pt too wide) in paragraph at lines 549--551
 \T1/cmr/m/n/12 http://www.bsc.es/sites/default/files/public/computer_science/pe
 rformance_tools/w1_introtools.pdf 
  []
 
-) (./memoria.bbl [75] [76
+) (./memoria.bbl [84] [85
 
-] [77])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
- [78]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+] [86])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+ [87]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (./memoria.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 27B077707C16E8FCFDB9F94FF8D9DD7F;3800.
+(rerunfilecheck)             Checksum: 535CC3EFDDA226F2818EFB11BB5DC804;3863.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 9765 strings out of 494966
- 143689 string characters out of 6179558
- 245121 words of memory out of 5000000
- 12529 multiletter control sequences out of 15000+600000
+ 9822 strings out of 494966
+ 144896 string characters out of 6179558
+ 250072 words of memory out of 5000000
+ 12563 multiletter control sequences out of 15000+600000
  22261 words of font info for 62 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  40i,17n,40p,1064b,731s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1144,10 +1282,10 @@ pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/kurtz/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/f
 eymr10.pfb>
-Output written on memoria.pdf (82 pages, 862898 bytes).
+Output written on memoria.pdf (91 pages, 915565 bytes).
 PDF statistics:
- 1449 PDF objects out of 1728 (max. 8388607)
- 831 compressed objects within 9 object streams
- 218 named destinations out of 1000 (max. 500000)
- 566 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1542 PDF objects out of 1728 (max. 8388607)
+ 907 compressed objects within 10 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 599 words of extra memory for PDF output out of 10000 (max. 10000000)
 
