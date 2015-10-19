@@ -13,7 +13,7 @@ Thanks to this tool we can assure that theoretical planning is correct and optim
 
 \begin{figure}[h]
 \includegraphics[height=\textheight]{img/main_01_completeGraph.png}
-\caption{COMPSs monitor graph for 4 threads and small dataset}
+\caption{COMPSs monitor data dependencies graph for an execution of dataset 5 with 4 threads}
 \label{par:graph}
 \end{figure}
 
@@ -23,7 +23,7 @@ Figure \ref{fig:monitor} shows the information associated to the previous execut
 
  \begin{figure}[h]
  \includegraphics[height=\textheight]{img/main_01_completeGraph.png}
- \caption{COMPSs monitor tasks information}
+ \caption{COMPSs monitor tasks information for an execution of dataset 5 with 4 threads}
  \label{fig:monitor}
  \end{figure}
  
@@ -125,7 +125,7 @@ From here onwards the version with the ordered execution will be always used.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{traces/compss_2_small_order.png}
-\caption{Trace for dataset 5 ordering algorithm's execution}
+\caption{Trace for dataset 5 showing the resulting performance improvement derived of ordering the algorithm's execution}
 \label{fig:small_trace_order}
 \end{figure}
 
@@ -180,7 +180,7 @@ Figure \ref{fig:small} shows that COMPSs is the slowest parallelization for the 
 	Multiprocessing & 6 s & 74 s & 992 s & 1670 s \\
 	\hline
 	\end{tabular}
-	\captionof{table}{Execution times of three versions}
+	\captionof{table}{Best execution times of each versions with the optimal resources available where we can see that pyCOMPSs works best with the more demanding datasets (3 and 4)}
 	\label{fig:times}
 \end{center}
 
@@ -202,13 +202,13 @@ Table \ref{fig:small_times_tab} shows the execution times for dataset 1 given by
 	Multiprocessing & 6.1 s & 6.0 s & 6.1 s & - & - & - \\
 	\hline
 	\end{tabular}
-	\captionof{table}{Execution times of dataset 1 given by number of threads}
+	\captionof{table}{Execution times given by number of threads where can be observed that COMPSs is not effective for the smallest dataset (1)}
 	\label{fig:small_times_tab}
 \end{center}
 
 
-Dataset 2 execution times can be seen on table \ref{fig:medium_times_tab}. Here COMPSs already outperforms both other methods. Still, pyProCT is not escalating with the resources for the refactored code. On MPI we see that we reach the best performance at 
-32 threads. Multiprocessing escalates really well but can not use more than 16 threads.
+Dataset 2 execution times can be seen on table \ref{fig:medium_times_tab}. Here COMPSs already outperforms both other methods. Still, pyProCT is not sscalating with the resources for the refactored code. On MPI we see that we reach the best performance at 
+32 threads. Multiprocessing scalates really well but can not use more than 16 threads.
 \begin{center}
 	\begin{tabular}{| C{3cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} |  C{2cm} | C{2cm} |}
 	\hline
@@ -221,7 +221,7 @@ Dataset 2 execution times can be seen on table \ref{fig:medium_times_tab}. Here 
 	Multiprocessing & 133.2 s & 105.6 s & 67.1 s & -  & -  & - \\
 	\hline
 	\end{tabular}
-	\captionof{table}{Execution times of dataset 2 given by number of threads}
+	\captionof{table}{Execution times of for medium-sized dataset 2 given by number of threads.}
 	\label{fig:medium_times_tab}
 \end{center}
 
@@ -239,11 +239,11 @@ Dataset 3 is the biggest protein ensemble dataset and its results are reported o
 	Multiprocessing & 1447.1 s & 992.6 s & - & -  & -  & - \\
 	\hline
 	\end{tabular}
-	\captionof{table}{Execution times of dataset 3 given by number of threads}
+	\captionof{table}{Execution times of biggest input, dataset 3, given by number of threads. For this dataset pyCOMPSs already bests the other versions for, at least, 5 minutes.}
 	\label{fig:big_times_tab}
 \end{center}
 
-Last results are the ones from the numerical dataset 4 reported on table \ref{fig:m_times_tab}. Again, some of the MPI and multiprocessing crashed. We can observe the same traits that we have been seeing during all the analysis. MPI is the slowest on large datasets and crashes on more than 16 threads rendering useless its ability to run over different nodes on distributed systems as MareNostrum 3. Multiprocessing again escalates really well till its limit. COMPSs outperforms both on big datasets and does not crash due to its ability to distribute memory load over different nodes. However we have also seen that COMPSs execution times do not benefit from the resources' increase. Next we will have a look at why that happens.
+Last results are the ones from the numerical dataset 4 reported on table \ref{fig:m_times_tab}. This dataset is numeric instead of a protein ensemble. This means that the matrix computation is faster but the clustering and scoring is much more demanding. Again, some of the MPI and multiprocessing crashed. We can observe the same traits that we have been seeing during all the analysis. MPI is the slowest on large datasets and crashes on more than 16 threads rendering useless its ability to run over different nodes on distributed systems as MareNostrum 3. Multiprocessing again scalates really well till its limit. COMPSs outperforms both on big datasets and does not crash due to its ability to distribute memory load over different nodes. However we have also seen that COMPSs execution times do not benefit from the resources' increase. Next we will have a look at why that happens.
 \begin{center}
 	\begin{tabular}{| C{3cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} |  C{2cm} | C{2cm} |}
 	\hline
@@ -256,7 +256,7 @@ Last results are the ones from the numerical dataset 4 reported on table \ref{fi
 	Multiprocessing & 2500.1 s & 1858.6 s & 1689.0 s & -  & -  & - \\
 	\hline
 	\end{tabular}
-	\captionof{table}{Execution times of dataset 3 given by number of threads}
+	\captionof{table}{Execution times of dataset 4 given by number of threads. This numeric dataset allows multiprocessing and MPI to use more threads than the previous figure before crashing. Despite that pyCOMPSs bests them for a minimum amount of 3 minutes and a half.}
 	\label{fig:m_times_tab}
 \end{center}
 
@@ -266,7 +266,7 @@ Figure \ref{fig:scalability} shows why COMPSs execution times do not decrease wi
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{traces/compss_6_piece_tasks.png}
 \includegraphics[width=\textwidth]{traces/compss_2_piece_tasks.png}
-\caption{Section of traces for execution of dataset 4 with 6 nodes (upper) and 2 nodes (lower)}
+\caption{Section of traces for execution of dataset 4 with 6 nodes (upper) and 2 nodes (lower) where we can see why pyCOMPSs performance does not increase with the number of nodes assigned.}
 \label{fig:scalability}
 \end{figure}
 
